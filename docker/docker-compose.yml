@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    ports:
+      - "53085:53085"
+    volumes:
+      - ./app:/app/app
+      - ./data:/app/data
+    restart: unless-stopped
+    environment:
+      - TZ=Asia/Shanghai

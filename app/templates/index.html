@@ -1,0 +1,733 @@
+    <!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>竞赛智能客服系统</title>
+        <style>
+            :root {
+                --primary-color: #4CAF50;
+                --secondary-color: #e8f5e9;
+                --text-color: #333;
+                --light-gray: #f1f1f1;
+                --border-color: #ddd;
+            }
+            
+            body {
+                font-family: 'Microsoft YaHei', Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                color: var(--text-color);
+                background-color: #f9f9f9;
+                line-height: 1.6;
+            }
+            
+            .container {
+                max-width: 1100px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            
+            .header {
+                background-color: white;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                padding: 15px 0;
+                text-align: center;
+            }
+            
+            .header h1 {
+                margin: 0;
+                color: var(--primary-color);
+            }
+            
+            .main {
+                display: flex;
+                margin-top: 20px;
+                min-height: calc(100vh - 200px);
+            }
+            
+            .sidebar {
+                width: 300px;
+                background: white;
+                border-radius: 8px;
+                padding: 20px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                margin-right: 20px;
+            }
+            
+            .chat-container {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                background: white;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            
+            .chat-header {
+                background-color: var(--primary-color);
+                color: white;
+                padding: 15px;
+                text-align: center;
+            }
+            
+            .chat-messages {
+                flex: 1;
+                padding: 20px;
+                overflow-y: auto;
+                max-height: 500px;
+            }
+            
+            .message {
+                margin-bottom: 15px;
+                padding: 10px 15px;
+                border-radius: 8px;
+                max-width: 80%;
+            }
+            
+            .user {
+                background-color: var(--light-gray);
+                margin-left: auto;
+                text-align: right;
+            }
+            
+            .bot {
+                background-color: var(--secondary-color);
+                margin-right: auto;
+            }
+            
+            .chat-input {
+                display: flex;
+                padding: 15px;
+                border-top: 1px solid var(--border-color);
+            }
+            
+            #message-input {
+                flex: 1;
+                padding: 10px;
+                border: 1px solid var(--border-color);
+                border-radius: 4px;
+                font-size: 16px;
+            }
+            
+            button {
+                padding: 10px 20px;
+                background-color: var(--primary-color);
+                color: white;
+                border: none;
+                border-radius: 4px;
+                margin-left: 10px;
+                cursor: pointer;
+                font-size: 16px;
+                transition: background-color 0.3s;
+            }
+            
+            button:hover {
+                background-color: #388e3c;
+            }
+            
+            .card {
+                background: white;
+                border-radius: 8px;
+                padding: 15px;
+                margin-bottom: 15px;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            }
+            
+            .card h3 {
+                margin-top: 0;
+                color: var(--primary-color);
+                border-bottom: 1px solid var(--border-color);
+                padding-bottom: 10px;
+            }
+            
+            .example-question {
+                cursor: pointer;
+                padding: 8px;
+                margin-bottom: 5px;
+                background-color: var(--secondary-color);
+                border-radius: 4px;
+                transition: background-color 0.2s;
+            }
+            
+            .example-question:hover {
+                background-color: #d7edd8;
+            }
+            
+            .competition-types {
+                max-height: 200px;
+                overflow-y: auto;
+                padding-right: 5px;
+            }
+            
+            .competition-type {
+                padding: 6px 8px;
+                margin-bottom: 4px;
+                background-color: #f5f5f5;
+                border-radius: 4px;
+                font-size: 14px;
+                transition: background-color 0.2s;
+            }
+            
+            .competition-type:hover {
+                background-color: #e0e0e0;
+            }
+            
+            .feature {
+                margin-bottom: 10px;
+                padding-bottom: 8px;
+                border-bottom: 1px solid var(--border-color);
+            }
+            
+            .feature:last-child {
+                border-bottom: none;
+            }
+            
+            .feature-title {
+                font-weight: bold;
+                color: var(--primary-color);
+                margin-bottom: 3px;
+            }
+            
+            .feature-desc {
+                font-size: 14px;
+                color: #666;
+            }
+            
+            .meta-info {
+                font-size: 12px;
+                color: #666;
+                margin-top: 5px;
+            }
+            
+            /* 加载提示样式 */
+            .loading {
+                position: relative;
+            }
+            
+            .loading .content {
+                display: flex;
+                align-items: center;
+            }
+            
+            .loading .content::after {
+                content: "";
+                width: 12px;
+                height: 12px;
+                margin-left: 10px;
+                border-radius: 50%;
+                border: 2px solid transparent;
+                border-top-color: var(--primary-color);
+                border-right-color: var(--primary-color);
+                animation: spinner 0.8s linear infinite;
+            }
+            
+            @keyframes spinner {
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <h1>竞赛智能客服系统</h1>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="main">
+                <div class="sidebar">
+                    <div class="card">
+                        <h3>常见问题</h3>
+                        <div class="example-question" onclick="askExample(this.textContent)">
+                            泰迪杯报名时间是什么时候？
+                        </div>
+                        <div class="example-question" onclick="askExample(this.textContent)">
+                            泰迪杯有哪些赛题类型？
+                        </div>
+                        <div class="example-question" onclick="askExample(this.textContent)">
+                            3D编程模型创新设计专项赛有什么要求？
+                        </div>
+                        <div class="example-question" onclick="askExample(this.textContent)">
+                            智能芯片与计算思维专项赛评分标准是什么？
+                        </div>
+                        <div class="example-question" onclick="askExample(this.textContent)">
+                            太空探索智能机器人专项赛获奖后有哪些奖励？
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>竞赛类型</h3>
+                        <div class="competition-types">
+                            <div class="competition-type" onclick="askExample('泰迪杯数据挖掘挑战赛的介绍是什么？')">泰迪杯数据挖掘挑战赛</div>
+                            <div class="competition-type" onclick="askExample('3D编程模型创新设计专项赛的介绍是什么？')">3D编程模型创新设计专项赛</div>
+                            <div class="competition-type" onclick="askExample('编程创作与信息学专项赛的介绍是什么？')">编程创作与信息学专项赛</div>
+                            <div class="competition-type" onclick="askExample('机器人工程设计专项赛的介绍是什么？')">机器人工程设计专项赛</div>
+                            <div class="competition-type" onclick="askExample('极地资源勘探专项赛的介绍是什么？')">极地资源勘探专项赛</div>
+                            <div class="competition-type" onclick="askExample('竞技机器人专项赛的介绍是什么？')">竞技机器人专项赛</div>
+                            <div class="competition-type" onclick="askExample('开源鸿蒙机器人专项赛的介绍是什么？')">开源鸿蒙机器人专项赛</div>
+                            <div class="competition-type" onclick="askExample('人工智能综合创新专项赛的介绍是什么？')">人工智能综合创新专项赛</div>
+                            <div class="competition-type" onclick="askExample('三维程序创意设计专项赛的介绍是什么？')">三维程序创意设计专项赛</div>
+                            <div class="competition-type" onclick="askExample('生成式人工智能应用专项赛的介绍是什么？')">生成式人工智能应用专项赛</div>
+                            <div class="competition-type" onclick="askExample('太空电梯工程设计专项赛的介绍是什么？')">太空电梯工程设计专项赛</div>
+                            <div class="competition-type" onclick="askExample('太空探索智能机器人专项赛的介绍是什么？')">太空探索智能机器人专项赛</div>
+                            <div class="competition-type" onclick="askExample('虚拟仿真平台创新设计专项赛的介绍是什么？')">虚拟仿真平台创新设计专项赛</div>
+                            <div class="competition-type" onclick="askExample('智能数据采集装置设计专项赛的介绍是什么？')">智能数据采集装置设计专项赛</div>
+                            <div class="competition-type" onclick="askExample('智能芯片与计算思维专项赛的介绍是什么？')">智能芯片与计算思维专项赛</div>
+                            <div class="competition-type" onclick="askExample('未来校园智能应用专项赛的介绍是什么？')">未来校园智能应用专项赛</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>系统信息</h3>
+                        <p>数据源: 竞赛知识文档</p>
+                        <p>最后更新: 2025-05-08</p>
+                        <p>会话ID: <span id="session-id">guest</span></p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>系统功能</h3>
+                        <div class="feature">
+                            <div class="feature-title">基础信息查询</div>
+                            <div class="feature-desc">查询各类竞赛的报名时间、参赛条件、赛题类型等基本信息</div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-title">统计分析查询</div>
+                            <div class="feature-desc">获取各类竞赛的数据统计和分析结果</div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-title">开放性问题处理</div>
+                            <div class="feature-desc">回答关于竞赛的"如何"、"为什么"等开放性问题</div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-title">实时更新</div>
+                            <div class="feature-desc">支持竞赛数据的实时更新，保证信息时效性</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chat-container">
+                    <div class="chat-header">
+                        <h2>智能问答</h2>
+                    </div>
+                    
+                    <div id="chat-messages" class="chat-messages">
+                        <div class="message bot">
+                            <div class="content">
+                                您好！ 我是竞赛智能客服助手， 可以回答各种竞赛的问题，包括泰迪杯数据挖掘挑战赛、3D编程模型创新设计专项赛、智能芯片与计算思维专项赛等16个竞赛类型。请问有什么可以帮助您的吗？
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="chat-input">
+                        <input type="text" id="message-input" 
+                               placeholder="请输入您的问题..." 
+                               onkeydown="if(event.key==='Enter'){sendMessage();}">
+                        <button onclick="sendMessage()">发送</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            // 全局变量
+            let socket = null;
+            let isConnected = false;
+            let reconnectAttempts = 0;
+            const MAX_RECONNECT_ATTEMPTS = 3;
+            let sessionId = null;
+            let pendingQuestions = [];
+            let lastConnectionAttempt = 0;
+            
+            // WebSocket连接函数
+            function connectWebSocket() {
+                // 避免频繁重连
+                const currentTime = Date.now();
+                if (currentTime - lastConnectionAttempt < 2000) {
+                    console.log('避免频繁重连，等待2秒后再试');
+                    setTimeout(connectWebSocket, 2000);
+                    return;
+                }
+                
+                lastConnectionAttempt = currentTime;
+                
+                // 创建WebSocket连接
+                const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+                const wsUrl = `${wsProtocol}//${window.location.host}/ws`;
+                
+                console.log(`尝试连接WebSocket: ${wsUrl}`);
+                try {
+                    socket = new WebSocket(wsUrl);
+                    
+                    socket.onopen = function() {
+                        console.log('WebSocket连接已建立');
+                        isConnected = true;
+                        reconnectAttempts = 0;
+                        
+                        // 更新UI状态
+                        document.getElementById('ws-status').textContent = '已连接';
+                        document.getElementById('ws-status').style.color = 'green';
+                        
+                        // 连接后立即发送会话ID初始化
+                        sessionId = getOrCreateSessionId();
+                        
+                        try {
+                            socket.send(JSON.stringify({
+                                action: 'init',
+                                session_id: sessionId
+                            }));
+                            console.log(`发送会话初始化: ${sessionId}`);
+                        } catch (e) {
+                            console.error('发送会话初始化失败:', e);
+                        }
+                        
+                        // 处理积压的问题
+                        if (pendingQuestions.length > 0) {
+                            console.log(`处理 ${pendingQuestions.length} 个积压问题`);
+                            processPendingQuestions();
+                        }
+                    };
+                    
+                    socket.onmessage = function(event) {
+                        try {
+                            const data = JSON.parse(event.data);
+                            console.log('收到WebSocket消息:', data);
+                            processResponse(data);
+                        } catch (error) {
+                            console.error('解析WebSocket消息时出错:', error);
+                            displayError('响应格式错误: ' + error.message);
+                        }
+                    };
+                    
+                    socket.onclose = function(event) {
+                        console.log(`WebSocket连接已关闭，代码: ${event.code}, 原因: ${event.reason}`);
+                        isConnected = false;
+                        
+                        // 更新UI状态
+                        document.getElementById('ws-status').textContent = '已断开';
+                        document.getElementById('ws-status').style.color = 'red';
+                        
+                        // 自动重连逻辑
+                        if (reconnectAttempts < MAX_RECONNECT_ATTEMPTS) {
+                            reconnectAttempts++;
+                            const delay = Math.min(1000 * Math.pow(2, reconnectAttempts), 10000);
+                            console.log(`将在${delay}毫秒后尝试第${reconnectAttempts}次重新连接`);
+                            setTimeout(connectWebSocket, delay);
+                        } else {
+                            displayError('WebSocket连接已断开，请刷新页面重试');
+                            // 提示用户刷新页面
+                            if (confirm('连接已断开，是否刷新页面重试？')) {
+                                window.location.reload();
+                            }
+                        }
+                    };
+                    
+                    socket.onerror = function(error) {
+                        console.error('WebSocket错误:', error);
+                        document.getElementById('ws-status').textContent = '连接错误';
+                        document.getElementById('ws-status').style.color = 'red';
+                    };
+                } catch (e) {
+                    console.error('创建WebSocket连接失败:', e);
+                    displayError('创建WebSocket连接失败: ' + e.message);
+                }
+            }
+            
+            // 处理积压的问题
+            function processPendingQuestions() {
+                if (!isConnected || pendingQuestions.length === 0) {
+                    return;
+                }
+                
+                const question = pendingQuestions.shift();
+                console.log(`处理积压问题: ${question}`);
+                sendQuestionToServer(question);
+                
+                // 如果还有更多问题，安排下一个
+                if (pendingQuestions.length > 0) {
+                    setTimeout(processPendingQuestions, 1000);
+                }
+            }
+            
+            // 尝试连接WebSocket直到成功
+            function ensureWebSocketConnection(callback) {
+                if (isConnected && socket && socket.readyState === WebSocket.OPEN) {
+                    callback();
+                    return true;
+                }
+                
+                if (reconnectAttempts >= MAX_RECONNECT_ATTEMPTS) {
+                    displayError('WebSocket无法连接，请刷新页面');
+                    return false;
+                }
+                
+                console.log('WebSocket未连接，尝试连接...');
+                connectWebSocket();
+                
+                // 设置最长等待时间
+                let waited = 0;
+                const waitInterval = 500;
+                const maxWait = 5000;
+                
+                const checkInterval = setInterval(() => {
+                    waited += waitInterval;
+                    
+                    if (isConnected && socket && socket.readyState === WebSocket.OPEN) {
+                        clearInterval(checkInterval);
+                        callback();
+                        return;
+                    }
+                    
+                    if (waited >= maxWait) {
+                        clearInterval(checkInterval);
+                        displayError('WebSocket连接超时，请稍后再试');
+                        return;
+                    }
+                }, waitInterval);
+                
+                return false;
+            }
+            
+            // 页面加载时建立WebSocket连接
+            document.addEventListener('DOMContentLoaded', function() {
+                // 添加WebSocket状态指示器
+                const statusIndicator = document.createElement('div');
+                statusIndicator.id = 'ws-status-container';
+                statusIndicator.style.position = 'fixed';
+                statusIndicator.style.bottom = '10px';
+                statusIndicator.style.right = '10px';
+                statusIndicator.style.padding = '5px 10px';
+                statusIndicator.style.background = '#f1f1f1';
+                statusIndicator.style.border = '1px solid #ddd';
+                statusIndicator.style.borderRadius = '4px';
+                statusIndicator.style.fontSize = '12px';
+                
+                statusIndicator.innerHTML = '连接状态: <span id="ws-status" style="color:gray">正在连接...</span>';
+                document.body.appendChild(statusIndicator);
+                
+                // 连接WebSocket
+                connectWebSocket();
+                
+                // 初始化UI元素和事件处理
+                initUI();
+            });
+            
+            // 初始化UI元素和事件处理
+            function initUI() {
+                // 生成唯一会话ID
+                sessionId = getOrCreateSessionId();
+                document.getElementById('session-id').textContent = sessionId;
+                
+                // 添加加载指示器
+                const chatMessages = document.getElementById('chat-messages');
+                const loadingIndicator = document.createElement('div');
+                loadingIndicator.id = 'loading-indicator';
+                loadingIndicator.className = 'loading';
+                loadingIndicator.innerHTML = '<div class="content">正在思考中...</div>';
+                loadingIndicator.style.display = 'none';
+                loadingIndicator.style.padding = '10px 15px';
+                loadingIndicator.style.margin = '10px 0';
+                loadingIndicator.style.backgroundColor = '#e8f5e9';
+                loadingIndicator.style.borderRadius = '8px';
+                chatMessages.appendChild(loadingIndicator);
+                
+                // 绑定事件处理
+                document.getElementById('message-input').addEventListener('keydown', function(event) {
+                    if (event.key === 'Enter') {
+                        sendQuestion();
+                    }
+                });
+            }
+            
+            // 获取或创建会话ID
+            function getOrCreateSessionId() {
+                if (!sessionId) {
+                    // 尝试从本地存储获取
+                    let storedId = localStorage.getItem('chatSessionId');
+                    if (!storedId) {
+                        storedId = 'session_' + Date.now() + '_' + Math.floor(Math.random() * 1000);
+                        localStorage.setItem('chatSessionId', storedId);
+                    }
+                    sessionId = storedId;
+                }
+                return sessionId;
+            }
+            
+            // 修改sendMessage函数为sendQuestion的别名
+            function sendMessage() {
+                sendQuestion();
+            }
+            
+            // 添加问题到历史记录
+            function addToQuestionHistory(question) {
+                const messagesContainer = document.getElementById('chat-messages');
+                const messageDiv = document.createElement('div');
+                messageDiv.className = 'message user';
+                messageDiv.innerHTML = `<div class="content">${escapeHtml(question)}</div>`;
+                messagesContainer.appendChild(messageDiv);
+                
+                // 确保滚动到最新消息
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            }
+            
+            // 安全转义HTML
+            function escapeHtml(unsafe) {
+                return unsafe
+                    .replace(/&/g, "&amp;")
+                    .replace(/</g, "&lt;")
+                    .replace(/>/g, "&gt;")
+                    .replace(/"/g, "&quot;")
+                    .replace(/'/g, "&#039;");
+            }
+            
+            // 发送问题函数
+            function sendQuestion() {
+                const messageInput = document.getElementById('message-input');
+                const question = messageInput.value.trim();
+                if (!question) return;
+                
+                // 添加问题到对话记录
+                addToQuestionHistory(question);
+                
+                // 显示加载状态
+                document.getElementById('loading-indicator').style.display = 'block';
+                
+                // 清空输入框
+                messageInput.value = '';
+                
+                // 检查WebSocket连接并发送问题
+                if (isConnected && socket && socket.readyState === WebSocket.OPEN) {
+                    sendQuestionToServer(question);
+                } else {
+                    console.log('WebSocket未连接，添加到待处理队列');
+                    pendingQuestions.push(question);
+                    // 尝试重新连接
+                    ensureWebSocketConnection(() => {
+                        processPendingQuestions();
+                    });
+                }
+            }
+            
+            // 通过WebSocket发送问题
+            function sendQuestionToServer(question) {
+                try {
+                    // 通过WebSocket发送问题 - 使用标准API请求格式
+                    const message = {
+                        text: question, 
+                        session_id: getOrCreateSessionId()
+                    };
+                    
+                    console.log('WebSocket发送问题:', message);
+                    socket.send(JSON.stringify(message));
+                } catch (e) {
+                    console.error('发送问题失败:', e);
+                    displayError('发送问题失败: ' + e.message);
+                    
+                    // 如果发送失败，添加回队列
+                    pendingQuestions.unshift(question);
+                    
+                    // 重新连接
+                    connectWebSocket();
+                }
+            }
+            
+            // 统一处理响应
+            function processResponse(data) {
+                console.log('处理响应:', data);
+                document.getElementById('loading-indicator').style.display = 'none';
+                
+                // 处理特殊响应类型
+                if (data.type === 'connection_established' || data.type === 'init_ack') {
+                    console.log('连接确认:', data);
+                    return;
+                }
+                
+                // 检查响应格式
+                if (!data) {
+                    displayError('响应数据为空');
+                    return;
+                }
+                
+                // 多重备选字段尝试，提高兼容性
+                const answer = data.answer || data.response || data.result || data.message || '';
+                
+                if (!answer && !data.error) {
+                    displayError('响应格式错误，缺少answer字段');
+                    return;
+                }
+                
+                // 添加回答到聊天记录
+                addBotMessage(answer, data);
+                
+                // 处理错误
+                if (data.error) {
+                    console.error('响应包含错误:', data.error);
+                }
+            }
+            
+            // 添加机器人回答到聊天记录
+            function addBotMessage(text, data) {
+                const messagesContainer = document.getElementById('chat-messages');
+                const messageDiv = document.createElement('div');
+                messageDiv.className = 'message bot';
+                
+                // 格式化答案文本
+                let formattedText = text.replace(/\n/g, '<br>');
+                
+                // 添加主要内容
+                messageDiv.innerHTML = `<div class="content">${formattedText}</div>`;
+                
+                // 添加元数据
+                if (data.confidence !== undefined) {
+                    const confidencePercent = Math.round(data.confidence * 100);
+                    const metaInfo = document.createElement('div');
+                    metaInfo.className = 'meta-info';
+                    metaInfo.textContent = `置信度: ${confidencePercent}%`;
+                    messageDiv.appendChild(metaInfo);
+                }
+                
+                // 添加处理时间（如果有）
+                if (data.processing_time !== undefined) {
+                    const timeInfo = document.createElement('div');
+                    timeInfo.className = 'meta-info';
+                    timeInfo.textContent = `处理时间: ${data.processing_time.toFixed(2)}秒`;
+                    messageDiv.appendChild(timeInfo);
+                }
+                
+                // 添加到聊天窗口
+                messagesContainer.appendChild(messageDiv);
+                
+                // 确保滚动到最新消息
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            }
+            
+            // 显示错误信息
+            function displayError(message) {
+                console.error('错误:', message);
+                
+                // 在聊天窗口显示错误
+                const messagesContainer = document.getElementById('chat-messages');
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'message bot error';
+                errorDiv.innerHTML = `<div class="content" style="color:red">系统提示: ${message}</div>`;
+                messagesContainer.appendChild(errorDiv);
+                
+                // 停止加载动画
+                document.getElementById('loading-indicator').style.display = 'none';
+                
+                // 确保滚动到最新消息
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            }
+            
+            // 使用示例问题
+            function askExample(question) {
+                document.getElementById('message-input').value = question;
+                sendMessage();
+            }
+        </script>
+    </body>
+    </html>
+    
