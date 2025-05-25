@@ -1,0 +1,1485 @@
+2025-05-16 23:20:25,881 - __main__ - INFO - 开始批量测试...
+2025-05-16 23:20:26,561 - config - INFO - 系统配置已加载: 竞赛智能客服系统 v5.0.0
+2025-05-16 23:20:26,561 - config - INFO - API服务: 0.0.0.0:53085
+2025-05-16 23:20:26,561 - config - INFO - 知识库路径: D:/teddy-cup/data/knowledge/docs/附件1/
+2025-05-16 23:20:26,561 - config - INFO - TXT路径: D:/teddy-cup/data/knowledge/txt
+2025-05-16 23:20:26,562 - config - INFO - 日志级别: INFO
+2025-05-16 23:20:26,562 - config - INFO - RAG状态: 已启用
+2025-05-16 23:20:26,562 - config - INFO - 支持的竞赛数量: 16
+2025-05-16 23:20:27,650 - __main__ - INFO - 初始化MCPWithRAG引擎...
+2025-05-16 23:20:27,651 - app.models.SimpleRAG - INFO - 成功加载 334 个停用词
+2025-05-16 23:20:27,658 - app.models.SimpleRAG - INFO - 成功加载索引，包含 296 个文档，1582 个关键词
+2025-05-16 23:20:27,658 - app.models.SimpleRAG - INFO - 简化版RAG引擎初始化完成，索引包含 296 个文档片段，阈值设置为 0.3
+2025-05-16 23:20:27,980 - app.models.MCPWithContext - INFO - MCP引擎初始化完成，使用模型: qwen-max
+2025-05-16 23:20:27,980 - qa_evaluator - INFO - 答案评估器初始化完成
+2025-05-16 23:20:27,980 - app.models.MCPWithRAG - INFO - MCP+RAG集成引擎初始化完成
+2025-05-16 23:20:27,980 - __main__ - INFO - 开始测试 18 个问题...
+2025-05-16 23:20:27,981 - __main__ - INFO - [1/18] 测试: 泰迪杯数据挖掘挑战赛是什么比赛？
+2025-05-16 23:20:27,981 - __main__ - INFO - 测试问题: 泰迪杯数据挖掘挑战赛是什么比赛？
+2025-05-16 23:20:27,981 - app.models.MCPWithRAG - INFO - 处理问题: 泰迪杯数据挖掘挑战赛是什么比赛？
+2025-05-16 23:20:27,985 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:20:27,987 - app.models.MCPWithRAG - ERROR - RAG检索过程发生错误: SimpleRAG.search() got an unexpected keyword argument 'top_k'
+2025-05-16 23:20:27,987 - app.models.MCPWithRAG - INFO - RAG检索失败后，手动添加了 3 个备用文档
+2025-05-16 23:20:27,987 - app.models.MCPWithRAG - INFO - 找到 3 个相关文档
+2025-05-16 23:20:27,988 - app.models.MCPWithContext - INFO - 已添加 3 个文档作为上下文
+2025-05-16 23:20:34,436 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 0.72
+2025-05-16 23:20:34,436 - jieba - DEBUG - Building prefix dict from the default dictionary ...
+2025-05-16 23:20:34,438 - jieba - DEBUG - Loading model from cache C:\Users\LEGION\AppData\Local\Temp\jieba.cache
+2025-05-16 23:20:35,222 - jieba - DEBUG - Loading model cost 0.785 seconds.
+2025-05-16 23:20:35,222 - jieba - DEBUG - Prefix dict has been built successfully.
+2025-05-16 23:20:35,228 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.59, 评价: 回答基本符合要求，但可能有改进空间
+2025-05-16 23:20:35,234 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:20:35,235 - app.models.MCPWithRAG - INFO - 计算置信度: 0.38
+2025-05-16 23:20:35,235 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:20:35,235 - __main__ - INFO - 问题处理完成，置信度: 0.38, 耗时: 7.25秒
+2025-05-16 23:20:35,236 - __main__ - INFO - [2/18] 测试: 3D编程模型创新设计专项赛的参赛要求是什么？
+2025-05-16 23:20:35,236 - __main__ - INFO - 测试问题: 3D编程模型创新设计专项赛的参赛要求是什么？
+2025-05-16 23:20:35,236 - app.models.MCPWithRAG - INFO - 处理问题: 3D编程模型创新设计专项赛的参赛要求是什么？
+2025-05-16 23:20:35,236 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 3D编程模型创新设计专项赛
+2025-05-16 23:20:35,237 - app.models.MCPWithRAG - ERROR - RAG检索过程发生错误: SimpleRAG.search() got an unexpected keyword argument 'top_k'
+2025-05-16 23:20:35,237 - app.models.MCPWithRAG - INFO - RAG检索失败后，手动添加了 3 个备用文档
+2025-05-16 23:20:35,237 - app.models.MCPWithRAG - INFO - 找到 3 个相关文档
+2025-05-16 23:20:35,238 - app.models.MCPWithContext - INFO - 已添加 3 个文档作为上下文
+2025-05-16 23:20:45,791 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 0.72
+2025-05-16 23:20:45,797 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.88, 评价: 回答质量很高，准确且完整
+2025-05-16 23:20:45,804 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:20:45,804 - app.models.MCPWithRAG - INFO - 计算置信度: 0.52
+2025-05-16 23:20:45,804 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:20:45,805 - __main__ - INFO - 问题处理完成，置信度: 0.52, 耗时: 10.57秒
+2025-05-16 23:20:45,805 - __main__ - INFO - [3/18] 测试: 机器人工程设计专项赛需要提交哪些材料？
+2025-05-16 23:20:45,805 - __main__ - INFO - 测试问题: 机器人工程设计专项赛需要提交哪些材料？
+2025-05-16 23:20:45,806 - app.models.MCPWithRAG - INFO - 处理问题: 机器人工程设计专项赛需要提交哪些材料？
+2025-05-16 23:20:45,806 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 机器人工程挑战赛
+2025-05-16 23:20:45,806 - app.models.MCPWithRAG - ERROR - RAG检索过程发生错误: SimpleRAG.search() got an unexpected keyword argument 'top_k'
+2025-05-16 23:20:45,807 - app.models.MCPWithRAG - INFO - RAG检索失败后，手动添加了 3 个备用文档
+2025-05-16 23:20:45,807 - app.models.MCPWithRAG - INFO - 找到 3 个相关文档
+2025-05-16 23:20:45,807 - app.models.MCPWithContext - INFO - 已添加 3 个文档作为上下文
+2025-05-16 23:20:53,041 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 0.72
+2025-05-16 23:20:53,048 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.65, 评价: 回答基本符合要求，但可能有改进空间
+2025-05-16 23:20:53,054 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:20:53,055 - app.models.MCPWithRAG - INFO - 计算置信度: 0.41
+2025-05-16 23:20:53,055 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:20:53,056 - __main__ - INFO - 问题处理完成，置信度: 0.41, 耗时: 7.25秒
+2025-05-16 23:20:53,056 - __main__ - INFO - [4/18] 测试: 太空电梯工程设计专项赛的评分标准是什么？
+2025-05-16 23:20:53,056 - __main__ - INFO - 测试问题: 太空电梯工程设计专项赛的评分标准是什么？
+2025-05-16 23:20:53,057 - app.models.MCPWithRAG - INFO - 处理问题: 太空电梯工程设计专项赛的评分标准是什么？
+2025-05-16 23:20:53,057 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 太空电梯设计专项赛
+2025-05-16 23:20:53,057 - app.models.MCPWithRAG - ERROR - RAG检索过程发生错误: SimpleRAG.search() got an unexpected keyword argument 'top_k'
+2025-05-16 23:20:53,058 - app.models.MCPWithRAG - INFO - RAG检索失败后，手动添加了 3 个备用文档
+2025-05-16 23:20:53,058 - app.models.MCPWithRAG - INFO - 找到 3 个相关文档
+2025-05-16 23:20:53,058 - app.models.MCPWithContext - INFO - 已添加 3 个文档作为上下文
+2025-05-16 23:20:59,054 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 0.72
+2025-05-16 23:20:59,061 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.59, 评价: 回答基本符合要求，但可能有改进空间
+2025-05-16 23:20:59,066 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:20:59,066 - app.models.MCPWithRAG - INFO - 计算置信度: 0.38
+2025-05-16 23:20:59,066 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:20:59,066 - __main__ - INFO - 问题处理完成，置信度: 0.38, 耗时: 6.01秒
+2025-05-16 23:20:59,067 - __main__ - INFO - [5/18] 测试: 虚拟仿真平台创新设计专项赛的参赛对象有哪些？
+2025-05-16 23:20:59,067 - __main__ - INFO - 测试问题: 虚拟仿真平台创新设计专项赛的参赛对象有哪些？
+2025-05-16 23:20:59,067 - app.models.MCPWithRAG - INFO - 处理问题: 虚拟仿真平台创新设计专项赛的参赛对象有哪些？
+2025-05-16 23:20:59,067 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 虚拟仿真平台创新设计专项赛
+2025-05-16 23:20:59,068 - app.models.MCPWithRAG - ERROR - RAG检索过程发生错误: SimpleRAG.search() got an unexpected keyword argument 'top_k'
+2025-05-16 23:20:59,068 - app.models.MCPWithRAG - INFO - RAG检索失败后，手动添加了 3 个备用文档
+2025-05-16 23:20:59,068 - app.models.MCPWithRAG - INFO - 找到 3 个相关文档
+2025-05-16 23:20:59,068 - app.models.MCPWithContext - INFO - 已添加 3 个文档作为上下文
+2025-05-16 23:21:08,862 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 0.72
+2025-05-16 23:21:08,869 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.75, 评价: 回答质量很高，准确且完整
+2025-05-16 23:21:08,878 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:21:08,879 - app.models.MCPWithRAG - INFO - 计算置信度: 0.46
+2025-05-16 23:21:08,879 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:21:08,879 - __main__ - INFO - 问题处理完成，置信度: 0.46, 耗时: 9.81秒
+2025-05-16 23:21:08,879 - __main__ - INFO - [6/18] 测试: 开源鸿蒙机器人专项赛的比赛流程是怎样的？
+2025-05-16 23:21:08,880 - __main__ - INFO - 测试问题: 开源鸿蒙机器人专项赛的比赛流程是怎样的？
+2025-05-16 23:21:08,880 - app.models.MCPWithRAG - INFO - 处理问题: 开源鸿蒙机器人专项赛的比赛流程是怎样的？
+2025-05-16 23:21:08,880 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 开源鸿蒙专项赛
+2025-05-16 23:21:08,881 - app.models.MCPWithRAG - ERROR - RAG检索过程发生错误: SimpleRAG.search() got an unexpected keyword argument 'top_k'
+2025-05-16 23:21:08,881 - app.models.MCPWithRAG - INFO - RAG检索失败后，手动添加了 3 个备用文档
+2025-05-16 23:21:08,881 - app.models.MCPWithRAG - INFO - 找到 3 个相关文档
+2025-05-16 23:21:08,881 - app.models.MCPWithContext - INFO - 已添加 3 个文档作为上下文
+2025-05-16 23:21:14,110 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 0.72
+2025-05-16 23:21:14,117 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.67, 评价: 回答质量很高，准确且完整
+2025-05-16 23:21:14,123 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:21:14,124 - app.models.MCPWithRAG - INFO - 计算置信度: 0.42
+2025-05-16 23:21:14,124 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:21:14,124 - __main__ - INFO - 问题处理完成，置信度: 0.42, 耗时: 5.24秒
+2025-05-16 23:21:14,125 - __main__ - INFO - [7/18] 测试: 所有竞赛的报名方式是什么？
+2025-05-16 23:21:14,125 - __main__ - INFO - 测试问题: 所有竞赛的报名方式是什么？
+2025-05-16 23:21:14,125 - app.models.MCPWithRAG - INFO - 处理问题: 所有竞赛的报名方式是什么？
+2025-05-16 23:21:14,125 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:21:14,125 - app.models.MCPWithRAG - ERROR - RAG检索过程发生错误: SimpleRAG.search() got an unexpected keyword argument 'top_k'
+2025-05-16 23:21:14,126 - app.models.MCPWithRAG - INFO - RAG检索失败后，手动添加了 3 个备用文档
+2025-05-16 23:21:14,126 - app.models.MCPWithRAG - INFO - 找到 3 个相关文档
+2025-05-16 23:21:14,127 - app.models.MCPWithContext - INFO - 已添加 3 个文档作为上下文
+2025-05-16 23:21:20,187 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 0.72
+2025-05-16 23:21:20,195 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.67, 评价: 回答质量很高，准确且完整
+2025-05-16 23:21:20,200 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:21:20,201 - app.models.MCPWithRAG - INFO - 计算置信度: 0.42
+2025-05-16 23:21:20,201 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:21:20,202 - __main__ - INFO - 问题处理完成，置信度: 0.42, 耗时: 6.08秒
+2025-05-16 23:21:20,202 - __main__ - INFO - [8/18] 测试: 竞赛作品提交的截止日期是什么时候？
+2025-05-16 23:21:20,203 - __main__ - INFO - 测试问题: 竞赛作品提交的截止日期是什么时候？
+2025-05-16 23:21:20,203 - app.models.MCPWithRAG - INFO - 处理问题: 竞赛作品提交的截止日期是什么时候？
+2025-05-16 23:21:20,204 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:21:20,204 - app.models.MCPWithRAG - ERROR - RAG检索过程发生错误: SimpleRAG.search() got an unexpected keyword argument 'top_k'
+2025-05-16 23:21:20,205 - app.models.MCPWithRAG - INFO - RAG检索失败后，手动添加了 3 个备用文档
+2025-05-16 23:21:20,205 - app.models.MCPWithRAG - INFO - 找到 3 个相关文档
+2025-05-16 23:21:20,205 - app.models.MCPWithContext - INFO - 已添加 3 个文档作为上下文
+2025-05-16 23:21:27,706 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 0.72
+2025-05-16 23:21:27,713 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.61, 评价: 回答基本符合要求，但可能有改进空间
+2025-05-16 23:21:27,721 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:21:27,721 - app.models.MCPWithRAG - INFO - 计算置信度: 0.39
+2025-05-16 23:21:27,721 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:21:27,721 - __main__ - INFO - 问题处理完成，置信度: 0.39, 耗时: 7.52秒
+2025-05-16 23:21:27,722 - __main__ - INFO - [9/18] 测试: 参赛获奖证书如何颁发？
+2025-05-16 23:21:27,722 - __main__ - INFO - 测试问题: 参赛获奖证书如何颁发？
+2025-05-16 23:21:27,722 - app.models.MCPWithRAG - INFO - 处理问题: 参赛获奖证书如何颁发？
+2025-05-16 23:21:27,722 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:21:27,723 - app.models.MCPWithRAG - ERROR - RAG检索过程发生错误: SimpleRAG.search() got an unexpected keyword argument 'top_k'
+2025-05-16 23:21:27,723 - app.models.MCPWithRAG - INFO - RAG检索失败后，手动添加了 3 个备用文档
+2025-05-16 23:21:27,723 - app.models.MCPWithRAG - INFO - 找到 3 个相关文档
+2025-05-16 23:21:27,723 - app.models.MCPWithContext - INFO - 已添加 3 个文档作为上下文
+2025-05-16 23:21:30,990 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 0.72
+2025-05-16 23:21:30,996 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.59, 评价: 回答基本符合要求，但可能有改进空间
+2025-05-16 23:21:31,003 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:21:31,003 - app.models.MCPWithRAG - INFO - 计算置信度: 0.38
+2025-05-16 23:21:31,003 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:21:31,003 - __main__ - INFO - 问题处理完成，置信度: 0.38, 耗时: 3.28秒
+2025-05-16 23:21:31,004 - __main__ - INFO - [10/18] 测试: 如何确保我的竞赛作品不被剽窃？
+2025-05-16 23:21:31,004 - __main__ - INFO - 测试问题: 如何确保我的竞赛作品不被剽窃？
+2025-05-16 23:21:31,004 - app.models.MCPWithRAG - INFO - 处理问题: 如何确保我的竞赛作品不被剽窃？
+2025-05-16 23:21:31,005 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:21:31,005 - app.models.MCPWithRAG - ERROR - RAG检索过程发生错误: SimpleRAG.search() got an unexpected keyword argument 'top_k'
+2025-05-16 23:21:31,005 - app.models.MCPWithRAG - INFO - RAG检索失败后，手动添加了 3 个备用文档
+2025-05-16 23:21:31,005 - app.models.MCPWithRAG - INFO - 找到 3 个相关文档
+2025-05-16 23:21:31,006 - app.models.MCPWithContext - INFO - 已添加 3 个文档作为上下文
+2025-05-16 23:21:42,298 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 0.72
+2025-05-16 23:21:42,305 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.60, 评价: 回答基本符合要求，但可能有改进空间
+2025-05-16 23:21:42,311 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:21:42,311 - app.models.MCPWithRAG - INFO - 计算置信度: 0.38
+2025-05-16 23:21:42,312 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:21:42,312 - __main__ - INFO - 问题处理完成，置信度: 0.38, 耗时: 11.31秒
+2025-05-16 23:21:42,312 - __main__ - INFO - [11/18] 测试: 参加3D编程模型创新设计专项赛需要什么编程基础？
+2025-05-16 23:21:42,312 - __main__ - INFO - 测试问题: 参加3D编程模型创新设计专项赛需要什么编程基础？
+2025-05-16 23:21:42,313 - app.models.MCPWithRAG - INFO - 处理问题: 参加3D编程模型创新设计专项赛需要什么编程基础？
+2025-05-16 23:21:42,313 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 3D编程模型创新设计专项赛
+2025-05-16 23:21:42,313 - app.models.MCPWithRAG - ERROR - RAG检索过程发生错误: SimpleRAG.search() got an unexpected keyword argument 'top_k'
+2025-05-16 23:21:42,313 - app.models.MCPWithRAG - INFO - RAG检索失败后，手动添加了 3 个备用文档
+2025-05-16 23:21:42,314 - app.models.MCPWithRAG - INFO - 找到 3 个相关文档
+2025-05-16 23:21:42,314 - app.models.MCPWithContext - INFO - 已添加 3 个文档作为上下文
+2025-05-16 23:21:52,985 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 0.72
+2025-05-16 23:21:52,993 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.52, 评价: 回答基本符合要求，但可能有改进空间
+2025-05-16 23:21:52,999 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:21:52,999 - app.models.MCPWithRAG - INFO - 计算置信度: 0.35
+2025-05-16 23:21:52,999 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:21:53,000 - __main__ - INFO - 问题处理完成，置信度: 0.35, 耗时: 10.69秒
+2025-05-16 23:21:53,000 - __main__ - INFO - [12/18] 测试: 太空电梯工程设计专项赛中对模型材料有什么要求？
+2025-05-16 23:21:53,001 - __main__ - INFO - 测试问题: 太空电梯工程设计专项赛中对模型材料有什么要求？
+2025-05-16 23:21:53,001 - app.models.MCPWithRAG - INFO - 处理问题: 太空电梯工程设计专项赛中对模型材料有什么要求？
+2025-05-16 23:21:53,001 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 太空电梯设计专项赛
+2025-05-16 23:21:53,001 - app.models.MCPWithRAG - ERROR - RAG检索过程发生错误: SimpleRAG.search() got an unexpected keyword argument 'top_k'
+2025-05-16 23:21:53,002 - app.models.MCPWithRAG - INFO - RAG检索失败后，手动添加了 3 个备用文档
+2025-05-16 23:21:53,002 - app.models.MCPWithRAG - INFO - 找到 3 个相关文档
+2025-05-16 23:21:53,002 - app.models.MCPWithContext - INFO - 已添加 3 个文档作为上下文
+2025-05-16 23:22:00,670 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 0.72
+2025-05-16 23:22:00,679 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.60, 评价: 回答基本符合要求，但可能有改进空间
+2025-05-16 23:22:00,684 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:22:00,684 - app.models.MCPWithRAG - INFO - 计算置信度: 0.39
+2025-05-16 23:22:00,685 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:22:00,685 - __main__ - INFO - 问题处理完成，置信度: 0.39, 耗时: 7.68秒
+2025-05-16 23:22:00,685 - __main__ - INFO - [13/18] 测试: 参赛团队可以跨学校组队吗？
+2025-05-16 23:22:00,686 - __main__ - INFO - 测试问题: 参赛团队可以跨学校组队吗？
+2025-05-16 23:22:00,686 - app.models.MCPWithRAG - INFO - 处理问题: 参赛团队可以跨学校组队吗？
+2025-05-16 23:22:00,687 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:22:00,687 - app.models.MCPWithRAG - ERROR - RAG检索过程发生错误: SimpleRAG.search() got an unexpected keyword argument 'top_k'
+2025-05-16 23:22:00,687 - app.models.MCPWithRAG - INFO - RAG检索失败后，手动添加了 3 个备用文档
+2025-05-16 23:22:00,687 - app.models.MCPWithRAG - INFO - 找到 3 个相关文档
+2025-05-16 23:22:00,688 - app.models.MCPWithContext - INFO - 已添加 3 个文档作为上下文
+2025-05-16 23:22:08,261 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 0.72
+2025-05-16 23:22:08,268 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.56, 评价: 回答基本符合要求，但可能有改进空间
+2025-05-16 23:22:08,274 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:22:08,274 - app.models.MCPWithRAG - INFO - 计算置信度: 0.37
+2025-05-16 23:22:08,275 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:22:08,275 - __main__ - INFO - 问题处理完成，置信度: 0.37, 耗时: 7.59秒
+2025-05-16 23:22:08,275 - __main__ - INFO - [14/18] 测试: 若竞赛过程中遇到技术问题如何寻求帮助？
+2025-05-16 23:22:08,276 - __main__ - INFO - 测试问题: 若竞赛过程中遇到技术问题如何寻求帮助？
+2025-05-16 23:22:08,276 - app.models.MCPWithRAG - INFO - 处理问题: 若竞赛过程中遇到技术问题如何寻求帮助？
+2025-05-16 23:22:08,277 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:22:08,277 - app.models.MCPWithRAG - ERROR - RAG检索过程发生错误: SimpleRAG.search() got an unexpected keyword argument 'top_k'
+2025-05-16 23:22:08,277 - app.models.MCPWithRAG - INFO - RAG检索失败后，手动添加了 3 个备用文档
+2025-05-16 23:22:08,278 - app.models.MCPWithRAG - INFO - 找到 3 个相关文档
+2025-05-16 23:22:08,278 - app.models.MCPWithContext - INFO - 已添加 3 个文档作为上下文
+2025-05-16 23:22:12,165 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 0.72
+2025-05-16 23:22:12,171 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.57, 评价: 回答基本符合要求，但可能有改进空间
+2025-05-16 23:22:12,176 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:22:12,177 - app.models.MCPWithRAG - INFO - 计算置信度: 0.37
+2025-05-16 23:22:12,177 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:22:12,177 - __main__ - INFO - 问题处理完成，置信度: 0.37, 耗时: 3.90秒
+2025-05-16 23:22:12,177 - __main__ - INFO - [15/18] 测试: 比赛前是否有相关培训？
+2025-05-16 23:22:12,178 - __main__ - INFO - 测试问题: 比赛前是否有相关培训？
+2025-05-16 23:22:12,178 - app.models.MCPWithRAG - INFO - 处理问题: 比赛前是否有相关培训？
+2025-05-16 23:22:12,178 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:22:12,179 - app.models.MCPWithRAG - ERROR - RAG检索过程发生错误: SimpleRAG.search() got an unexpected keyword argument 'top_k'
+2025-05-16 23:22:12,179 - app.models.MCPWithRAG - INFO - RAG检索失败后，手动添加了 3 个备用文档
+2025-05-16 23:22:12,179 - app.models.MCPWithRAG - INFO - 找到 3 个相关文档
+2025-05-16 23:22:12,179 - app.models.MCPWithContext - INFO - 已添加 3 个文档作为上下文
+2025-05-16 23:22:19,619 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 0.72
+2025-05-16 23:22:19,626 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.66, 评价: 回答质量很高，准确且完整
+2025-05-16 23:22:19,632 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:22:19,634 - app.models.MCPWithRAG - INFO - 计算置信度: 0.42
+2025-05-16 23:22:19,634 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:22:19,634 - __main__ - INFO - 问题处理完成，置信度: 0.42, 耗时: 7.46秒
+2025-05-16 23:22:19,635 - __main__ - INFO - [16/18] 测试: 这是一个测试问题
+2025-05-16 23:22:19,635 - __main__ - INFO - 测试问题: 这是一个测试问题
+2025-05-16 23:22:19,635 - app.models.MCPWithRAG - INFO - 处理问题: 这是一个测试问题
+2025-05-16 23:22:19,635 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:22:19,636 - app.models.MCPWithRAG - ERROR - RAG检索过程发生错误: SimpleRAG.search() got an unexpected keyword argument 'top_k'
+2025-05-16 23:22:19,636 - app.models.MCPWithRAG - INFO - RAG检索失败后，手动添加了 3 个备用文档
+2025-05-16 23:22:19,636 - app.models.MCPWithRAG - INFO - 找到 3 个相关文档
+2025-05-16 23:22:19,636 - app.models.MCPWithContext - INFO - 已添加 3 个文档作为上下文
+2025-05-16 23:22:23,384 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 0.72
+2025-05-16 23:22:23,390 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.70, 评价: 回答质量很高，准确且完整
+2025-05-16 23:22:23,395 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:22:23,396 - app.models.MCPWithRAG - INFO - 计算置信度: 0.43
+2025-05-16 23:22:23,396 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:22:23,396 - __main__ - INFO - 问题处理完成，置信度: 0.43, 耗时: 3.76秒
+2025-05-16 23:22:23,397 - __main__ - INFO - [17/18] 测试: 请你谈谈你对人工智能的看法
+2025-05-16 23:22:23,397 - __main__ - INFO - 测试问题: 请你谈谈你对人工智能的看法
+2025-05-16 23:22:23,397 - app.models.MCPWithRAG - INFO - 处理问题: 请你谈谈你对人工智能的看法
+2025-05-16 23:22:23,398 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:22:23,398 - app.models.MCPWithRAG - ERROR - RAG检索过程发生错误: SimpleRAG.search() got an unexpected keyword argument 'top_k'
+2025-05-16 23:22:23,398 - app.models.MCPWithRAG - INFO - RAG检索失败后，手动添加了 3 个备用文档
+2025-05-16 23:22:23,399 - app.models.MCPWithRAG - INFO - 找到 3 个相关文档
+2025-05-16 23:22:23,399 - app.models.MCPWithContext - INFO - 已添加 3 个文档作为上下文
+2025-05-16 23:22:31,689 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 0.72
+2025-05-16 23:22:31,697 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.63, 评价: 回答基本符合要求，但可能有改进空间
+2025-05-16 23:22:31,703 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:22:31,703 - app.models.MCPWithRAG - INFO - 计算置信度: 0.40
+2025-05-16 23:22:31,704 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:22:31,704 - __main__ - INFO - 问题处理完成，置信度: 0.40, 耗时: 8.31秒
+2025-05-16 23:22:31,704 - __main__ - INFO - [18/18] 测试: 世界上最高的山峰是什么？
+2025-05-16 23:22:31,704 - __main__ - INFO - 测试问题: 世界上最高的山峰是什么？
+2025-05-16 23:22:31,704 - app.models.MCPWithRAG - INFO - 处理问题: 世界上最高的山峰是什么？
+2025-05-16 23:22:31,705 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:22:31,705 - app.models.MCPWithRAG - ERROR - RAG检索过程发生错误: SimpleRAG.search() got an unexpected keyword argument 'top_k'
+2025-05-16 23:22:31,705 - app.models.MCPWithRAG - INFO - RAG检索失败后，手动添加了 3 个备用文档
+2025-05-16 23:22:31,706 - app.models.MCPWithRAG - INFO - 找到 3 个相关文档
+2025-05-16 23:22:31,706 - app.models.MCPWithContext - INFO - 已添加 3 个文档作为上下文
+2025-05-16 23:22:34,632 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 0.72
+2025-05-16 23:22:34,640 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.51, 评价: 回答基本符合要求，但可能有改进空间
+2025-05-16 23:22:34,647 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:22:34,648 - app.models.MCPWithRAG - INFO - 计算置信度: 0.34
+2025-05-16 23:22:34,648 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:22:34,648 - __main__ - INFO - 问题处理完成，置信度: 0.34, 耗时: 2.94秒
+2025-05-16 23:22:34,651 - __main__ - INFO - 测试结果已保存至: test_results/test_results_20250516_232234.json
+2025-05-16 23:22:34,652 - __main__ - INFO - 
+====== 测试分析报告 ======
+2025-05-16 23:22:34,652 - __main__ - INFO - 测试问题总数: 18
+2025-05-16 23:22:34,652 - __main__ - INFO - 成功处理数: 18
+2025-05-16 23:22:34,652 - __main__ - INFO - 成功率: 100.0%
+2025-05-16 23:22:34,653 - __main__ - INFO - 平均置信度: 0.40
+2025-05-16 23:22:34,653 - __main__ - INFO - 平均处理时间: 7.04秒
+2025-05-16 23:22:34,653 - __main__ - INFO - 
+置信度分布:
+2025-05-16 23:22:34,653 - __main__ - INFO -   高 (>0.7): 0 个问题 (0.0%)
+2025-05-16 23:22:34,654 - __main__ - INFO -   中 (0.4-0.7): 7 个问题 (38.9%)
+2025-05-16 23:22:34,654 - __main__ - INFO -   低 (0.2-0.4): 11 个问题 (61.1%)
+2025-05-16 23:22:34,654 - __main__ - INFO -   极低 (<0.2): 0 个问题 (0.0%)
+2025-05-16 23:22:34,655 - __main__ - INFO - 
+测试完成！
+2025-05-16 23:24:06,333 - __main__ - INFO - 开始批量测试...
+2025-05-16 23:24:07,028 - config - INFO - 系统配置已加载: 竞赛智能客服系统 v5.0.0
+2025-05-16 23:24:07,029 - config - INFO - API服务: 0.0.0.0:53085
+2025-05-16 23:24:07,029 - config - INFO - 知识库路径: D:/teddy-cup/data/knowledge/docs/附件1/
+2025-05-16 23:24:07,029 - config - INFO - TXT路径: D:/teddy-cup/data/knowledge/txt
+2025-05-16 23:24:07,030 - config - INFO - 日志级别: INFO
+2025-05-16 23:24:07,030 - config - INFO - RAG状态: 已启用
+2025-05-16 23:24:07,030 - config - INFO - 支持的竞赛数量: 16
+2025-05-16 23:24:07,847 - __main__ - INFO - 初始化MCPWithRAG引擎...
+2025-05-16 23:24:07,848 - app.models.SimpleRAG - INFO - 成功加载 334 个停用词
+2025-05-16 23:24:07,854 - app.models.SimpleRAG - INFO - 成功加载索引，包含 296 个文档，1582 个关键词
+2025-05-16 23:24:07,854 - app.models.SimpleRAG - INFO - 简化版RAG引擎初始化完成，索引包含 296 个文档片段，阈值设置为 0.3
+2025-05-16 23:24:08,155 - app.models.MCPWithContext - INFO - MCP引擎初始化完成，使用模型: qwen-max
+2025-05-16 23:24:08,155 - qa_evaluator - INFO - 答案评估器初始化完成
+2025-05-16 23:24:08,155 - app.models.MCPWithRAG - INFO - MCP+RAG集成引擎初始化完成
+2025-05-16 23:24:08,156 - __main__ - INFO - 开始测试 18 个问题...
+2025-05-16 23:24:08,156 - __main__ - INFO - [1/18] 测试: 泰迪杯数据挖掘挑战赛是什么比赛？
+2025-05-16 23:24:08,156 - __main__ - INFO - 测试问题: 泰迪杯数据挖掘挑战赛是什么比赛？
+2025-05-16 23:24:08,156 - app.models.MCPWithRAG - INFO - 处理问题: 泰迪杯数据挖掘挑战赛是什么比赛？
+2025-05-16 23:24:08,160 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:24:08,161 - app.models.SimpleRAG - INFO - 开始搜索: 查询='泰迪杯数据挖掘挑战赛是什么比赛？', 竞赛类型='None', top_n=5
+2025-05-16 23:24:08,161 - jieba - DEBUG - Building prefix dict from the default dictionary ...
+2025-05-16 23:24:08,162 - jieba - DEBUG - Loading model from cache C:\Users\LEGION\AppData\Local\Temp\jieba.cache
+2025-05-16 23:24:08,992 - jieba - DEBUG - Loading model cost 0.830 seconds.
+2025-05-16 23:24:08,992 - jieba - DEBUG - Prefix dict has been built successfully.
+2025-05-16 23:24:08,993 - app.models.SimpleRAG - INFO - 从查询 '泰迪杯数据挖掘挑战赛是什么比赛？' 中提取关键词: ['泰迪杯', '数据挖掘', '挑战赛', '比赛']
+2025-05-16 23:24:08,994 - app.models.SimpleRAG - INFO - 从查询 '泰迪杯数据挖掘挑战赛是什么比赛？' 中提取关键词: ['泰迪杯', '数据挖掘', '挑战赛', '比赛']
+2025-05-16 23:24:08,994 - app.models.SimpleRAG - INFO - 基于关键词 ['泰迪杯', '数据挖掘', '挑战赛', '比赛'] 找到 102 个候选文档
+2025-05-16 23:24:08,998 - app.models.SimpleRAG - INFO - 找到 102 个相关文档，其中 12 个通过阈值 0.3 过滤
+2025-05-16 23:24:08,998 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 17.55, 来源: 03_2024年（第12届）“泰迪杯”数据挖掘挑战赛竞赛通知.pdf, 内容开头: 泰迪杯组委会〔2024〕1号 
+2024 年（第12 届）“泰迪杯”数据挖掘挑战赛 
+竞赛通知 
+各...
+2025-05-16 23:24:08,999 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-16 23:24:08,999 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-16 23:24:13,853 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-16 23:24:13,875 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.82, 评价: 回答质量很高，准确且完整
+2025-05-16 23:24:13,899 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:24:13,900 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-16 23:24:13,900 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:24:13,900 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 5.74秒
+2025-05-16 23:24:13,901 - __main__ - INFO - [2/18] 测试: 3D编程模型创新设计专项赛的参赛要求是什么？
+2025-05-16 23:24:13,901 - __main__ - INFO - 测试问题: 3D编程模型创新设计专项赛的参赛要求是什么？
+2025-05-16 23:24:13,901 - app.models.MCPWithRAG - INFO - 处理问题: 3D编程模型创新设计专项赛的参赛要求是什么？
+2025-05-16 23:24:13,901 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 3D编程模型创新设计专项赛
+2025-05-16 23:24:13,901 - app.models.SimpleRAG - INFO - 开始搜索: 查询='3D编程模型创新设计专项赛的参赛要求是什么？', 竞赛类型='None', top_n=5
+2025-05-16 23:24:13,902 - app.models.SimpleRAG - INFO - 从查询 '3D编程模型创新设计专项赛的参赛要求是什么？' 中提取关键词: ['要求', '设计', '3D编程模型创新设计专项赛', '模型', '参赛要求', '编程', '创新', '专项', '参赛']
+2025-05-16 23:24:13,902 - app.models.SimpleRAG - INFO - 从查询 '3D编程模型创新设计专项赛的参赛要求是什么？' 中提取关键词: ['要求', '设计', '3D编程模型创新设计专项赛', '模型', '参赛要求', '编程', '创新', '专项', '参赛']
+2025-05-16 23:24:13,902 - app.models.SimpleRAG - INFO - 基于关键词 ['要求', '设计', '3D编程模型创新设计专项赛', '模型', '参赛要求', '编程', '创新', '专项', '参赛'] 找到 145 个候选文档
+2025-05-16 23:24:13,907 - app.models.SimpleRAG - INFO - 找到 145 个相关文档，其中 12 个通过阈值 0.3 过滤
+2025-05-16 23:24:13,907 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 23.45, 来源: 15_虚拟仿真平台创新设计专项赛.pdf, 内容开头: 2 
+（一）参赛要求 
+1.在校小学、初中、高中、中专或职高学生均可参赛。 
+2.选手所在学段组别分...
+2025-05-16 23:24:13,907 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-16 23:24:13,908 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-16 23:24:38,916 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-16 23:24:38,943 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.82, 评价: 回答质量很高，准确且完整
+2025-05-16 23:24:38,967 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:24:38,968 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-16 23:24:38,968 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:24:38,969 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 25.07秒
+2025-05-16 23:24:38,969 - __main__ - INFO - [3/18] 测试: 机器人工程设计专项赛需要提交哪些材料？
+2025-05-16 23:24:38,970 - __main__ - INFO - 测试问题: 机器人工程设计专项赛需要提交哪些材料？
+2025-05-16 23:24:38,971 - app.models.MCPWithRAG - INFO - 处理问题: 机器人工程设计专项赛需要提交哪些材料？
+2025-05-16 23:24:38,971 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 机器人工程挑战赛
+2025-05-16 23:24:38,971 - app.models.SimpleRAG - INFO - 开始搜索: 查询='机器人工程挑战赛 机器人工程设计专项赛需要提交哪些材料？', 竞赛类型='None', top_n=5
+2025-05-16 23:24:38,972 - app.models.SimpleRAG - INFO - 从查询 '机器人工程挑战赛 机器人工程设计专项赛需要提交哪些材料？' 中提取关键词: ['设计', '机器人工程挑战赛', '机器人', '工程', '挑战赛', '工程设计', '专项', '提交', '材料']
+2025-05-16 23:24:38,973 - app.models.SimpleRAG - INFO - 从查询 '机器人工程挑战赛 机器人工程设计专项赛需要提交哪些材料？' 中提取关键词: ['设计', '机器人工程挑战赛', '机器人', '工程', '挑战赛', '工程设计', '专项', '提交', '材料']
+2025-05-16 23:24:38,973 - app.models.SimpleRAG - INFO - 基于关键词 ['设计', '机器人工程挑战赛', '机器人', '工程', '挑战赛', '工程设计', '专项', '提交', '材料'] 找到 146 个候选文档
+2025-05-16 23:24:38,980 - app.models.SimpleRAG - INFO - 找到 146 个相关文档，其中 12 个通过阈值 0.3 过滤
+2025-05-16 23:24:38,980 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 19.98, 来源: 05_机器人工程设计专项赛.pdf, 内容开头: — 4 —
+参加选拔赛的青少年需通过“人工智能创新挑战赛”网站点击击链
+接，选择“机器人工程设计专项...
+2025-05-16 23:24:38,981 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-16 23:24:38,981 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-16 23:24:46,352 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-16 23:24:46,373 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.87, 评价: 回答质量很高，准确且完整
+2025-05-16 23:24:46,395 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:24:46,395 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-16 23:24:46,395 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:24:46,396 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 7.43秒
+2025-05-16 23:24:46,396 - __main__ - INFO - [4/18] 测试: 太空电梯工程设计专项赛的评分标准是什么？
+2025-05-16 23:24:46,396 - __main__ - INFO - 测试问题: 太空电梯工程设计专项赛的评分标准是什么？
+2025-05-16 23:24:46,397 - app.models.MCPWithRAG - INFO - 处理问题: 太空电梯工程设计专项赛的评分标准是什么？
+2025-05-16 23:24:46,397 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 太空电梯设计专项赛
+2025-05-16 23:24:46,398 - app.models.SimpleRAG - INFO - 开始搜索: 查询='太空电梯设计专项赛 太空电梯工程设计专项赛的评分标准是什么？', 竞赛类型='None', top_n=5
+2025-05-16 23:24:46,399 - app.models.SimpleRAG - INFO - 从查询 '太空电梯设计专项赛 太空电梯工程设计专项赛的评分标准是什么？' 中提取关键词: ['评分标准', '设计', '太空电梯设计专项赛', '太空', '电梯', '专项', '工程设计']
+2025-05-16 23:24:46,399 - app.models.SimpleRAG - INFO - 从查询 '太空电梯设计专项赛 太空电梯工程设计专项赛的评分标准是什么？' 中提取关键词: ['评分标准', '设计', '太空电梯设计专项赛', '太空', '电梯', '专项', '工程设计']
+2025-05-16 23:24:46,400 - app.models.SimpleRAG - INFO - 基于关键词 ['评分标准', '设计', '太空电梯设计专项赛', '太空', '电梯', '专项', '工程设计'] 找到 65 个候选文档
+2025-05-16 23:24:46,403 - app.models.SimpleRAG - INFO - 找到 65 个相关文档，其中 12 个通过阈值 0.3 过滤
+2025-05-16 23:24:46,403 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 18.89, 来源: 12_太空电梯工程设计专项赛.pdf, 内容开头: 4 
+参赛选手使用提前设计并打印的连接件、电子件与其它材料搭建太空
+电梯模型。搭建过程中选手可根据设...
+2025-05-16 23:24:46,404 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-16 23:24:46,404 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-16 23:25:10,581 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-16 23:25:10,605 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.86, 评价: 回答质量很高，准确且完整
+2025-05-16 23:25:10,631 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:25:10,631 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-16 23:25:10,631 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:25:10,632 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 24.23秒
+2025-05-16 23:25:10,632 - __main__ - INFO - [5/18] 测试: 虚拟仿真平台创新设计专项赛的参赛对象有哪些？
+2025-05-16 23:25:10,632 - __main__ - INFO - 测试问题: 虚拟仿真平台创新设计专项赛的参赛对象有哪些？
+2025-05-16 23:25:10,633 - app.models.MCPWithRAG - INFO - 处理问题: 虚拟仿真平台创新设计专项赛的参赛对象有哪些？
+2025-05-16 23:25:10,633 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 虚拟仿真平台创新设计专项赛
+2025-05-16 23:25:10,633 - app.models.SimpleRAG - INFO - 开始搜索: 查询='虚拟仿真平台创新设计专项赛的参赛对象有哪些？', 竞赛类型='None', top_n=5
+2025-05-16 23:25:10,634 - app.models.SimpleRAG - INFO - 从查询 '虚拟仿真平台创新设计专项赛的参赛对象有哪些？' 中提取关键词: ['设计', '虚拟仿真平台创新设计专项赛', '虚拟', '平台', '创新', '专项', '参赛', '对象']
+2025-05-16 23:25:10,634 - app.models.SimpleRAG - INFO - 从查询 '虚拟仿真平台创新设计专项赛的参赛对象有哪些？' 中提取关键词: ['设计', '虚拟仿真平台创新设计专项赛', '虚拟', '平台', '创新', '专项', '参赛', '对象']
+2025-05-16 23:25:10,634 - app.models.SimpleRAG - INFO - 基于关键词 ['设计', '虚拟仿真平台创新设计专项赛', '虚拟', '平台', '创新', '专项', '参赛', '对象'] 找到 120 个候选文档
+2025-05-16 23:25:10,639 - app.models.SimpleRAG - INFO - 找到 120 个相关文档，其中 12 个通过阈值 0.3 过滤
+2025-05-16 23:25:10,639 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 34.03, 来源: 15_虚拟仿真平台创新设计专项赛.pdf, 内容开头: 1 
+一、赛事简介 
+虚拟仿真平台创新设计专项赛利用先进的人工智能算法和图像处理
+技术，模拟真实世界...
+2025-05-16 23:25:10,639 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-16 23:25:10,640 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-16 23:25:16,576 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-16 23:25:16,597 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.84, 评价: 回答质量很高，准确且完整
+2025-05-16 23:25:16,619 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:25:16,619 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-16 23:25:16,621 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:25:16,621 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 5.99秒
+2025-05-16 23:25:16,621 - __main__ - INFO - [6/18] 测试: 开源鸿蒙机器人专项赛的比赛流程是怎样的？
+2025-05-16 23:25:16,621 - __main__ - INFO - 测试问题: 开源鸿蒙机器人专项赛的比赛流程是怎样的？
+2025-05-16 23:25:16,621 - app.models.MCPWithRAG - INFO - 处理问题: 开源鸿蒙机器人专项赛的比赛流程是怎样的？
+2025-05-16 23:25:16,621 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 开源鸿蒙专项赛
+2025-05-16 23:25:16,622 - app.models.SimpleRAG - INFO - 开始搜索: 查询='开源鸿蒙专项赛 开源鸿蒙机器人专项赛的比赛流程是怎样的？', 竞赛类型='None', top_n=5
+2025-05-16 23:25:16,623 - app.models.SimpleRAG - INFO - 从查询 '开源鸿蒙专项赛 开源鸿蒙机器人专项赛的比赛流程是怎样的？' 中提取关键词: ['开源鸿蒙专项赛', '开源', '鸿蒙', '专项', '机器人', '比赛', '流程']
+2025-05-16 23:25:16,623 - app.models.SimpleRAG - INFO - 从查询 '开源鸿蒙专项赛 开源鸿蒙机器人专项赛的比赛流程是怎样的？' 中提取关键词: ['开源鸿蒙专项赛', '开源', '鸿蒙', '专项', '机器人', '比赛', '流程']
+2025-05-16 23:25:16,623 - app.models.SimpleRAG - INFO - 基于关键词 ['开源鸿蒙专项赛', '开源', '鸿蒙', '专项', '机器人', '比赛', '流程'] 找到 125 个候选文档
+2025-05-16 23:25:16,628 - app.models.SimpleRAG - INFO - 找到 125 个相关文档，其中 12 个通过阈值 0.3 过滤
+2025-05-16 23:25:16,629 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 13.98, 来源: 08_开源鸿蒙机器人专项赛.pdf, 内容开头: 4 
+1.比赛报名：参加活动的青少年通过访问“人工智能创新挑战赛”
+网站https://aiic.c...
+2025-05-16 23:25:16,629 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-16 23:25:16,630 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-16 23:25:34,070 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-16 23:25:34,098 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.92, 评价: 回答质量很高，准确且完整
+2025-05-16 23:25:34,124 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:25:34,125 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-16 23:25:34,125 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:25:34,126 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 17.50秒
+2025-05-16 23:25:34,126 - __main__ - INFO - [7/18] 测试: 所有竞赛的报名方式是什么？
+2025-05-16 23:25:34,126 - __main__ - INFO - 测试问题: 所有竞赛的报名方式是什么？
+2025-05-16 23:25:34,127 - app.models.MCPWithRAG - INFO - 处理问题: 所有竞赛的报名方式是什么？
+2025-05-16 23:25:34,127 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:25:34,127 - app.models.SimpleRAG - INFO - 开始搜索: 查询='所有竞赛的报名方式是什么？', 竞赛类型='None', top_n=5
+2025-05-16 23:25:34,128 - app.models.SimpleRAG - INFO - 从查询 '所有竞赛的报名方式是什么？' 中提取关键词: ['报名方式', '报名', '竞赛', '方式']
+2025-05-16 23:25:34,128 - app.models.SimpleRAG - INFO - 从查询 '所有竞赛的报名方式是什么？' 中提取关键词: ['报名方式', '报名', '竞赛', '方式']
+2025-05-16 23:25:34,128 - app.models.SimpleRAG - INFO - 基于关键词 ['报名方式', '报名', '竞赛', '方式'] 找到 47 个候选文档
+2025-05-16 23:25:34,130 - app.models.SimpleRAG - INFO - 找到 47 个相关文档，其中 12 个通过阈值 0.3 过滤
+2025-05-16 23:25:34,130 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 12.07, 来源: 15_虚拟仿真平台创新设计专项赛.pdf, 内容开头: 3 
+（三）竞赛方式 
+1.比赛形式为虚拟竞赛，总时长为90 分钟。 
+2.提交分数后系统会自行记录...
+2025-05-16 23:25:34,131 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-16 23:25:34,131 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-16 23:25:42,460 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-16 23:25:42,486 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.82, 评价: 回答质量很高，准确且完整
+2025-05-16 23:25:42,511 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:25:42,512 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-16 23:25:42,512 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:25:42,512 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 8.38秒
+2025-05-16 23:25:42,512 - __main__ - INFO - [8/18] 测试: 竞赛作品提交的截止日期是什么时候？
+2025-05-16 23:25:42,512 - __main__ - INFO - 测试问题: 竞赛作品提交的截止日期是什么时候？
+2025-05-16 23:25:42,513 - app.models.MCPWithRAG - INFO - 处理问题: 竞赛作品提交的截止日期是什么时候？
+2025-05-16 23:25:42,513 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:25:42,513 - app.models.SimpleRAG - INFO - 开始搜索: 查询='竞赛作品提交的截止日期是什么时候？', 竞赛类型='None', top_n=5
+2025-05-16 23:25:42,514 - app.models.SimpleRAG - INFO - 从查询 '竞赛作品提交的截止日期是什么时候？' 中提取关键词: ['作品提交', '竞赛', '作品', '提交', '截止', '时候']
+2025-05-16 23:25:42,514 - app.models.SimpleRAG - INFO - 从查询 '竞赛作品提交的截止日期是什么时候？' 中提取关键词: ['作品提交', '竞赛', '作品', '提交', '截止', '时候']
+2025-05-16 23:25:42,514 - app.models.SimpleRAG - INFO - 基于关键词 ['作品提交', '竞赛', '作品', '提交', '截止', '时候'] 找到 72 个候选文档
+2025-05-16 23:25:42,517 - app.models.SimpleRAG - INFO - 找到 72 个相关文档，其中 12 个通过阈值 0.3 过滤
+2025-05-16 23:25:42,517 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 10.63, 来源: 02_3D编程模型创新设计专项赛.pdf, 内容开头: 4 
+作品评审阶段 
+⚫ 参赛学生提交作品将由专家评审委员会进行作品
+评审，并甄选出部分优秀参赛学生...
+2025-05-16 23:25:42,518 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-16 23:25:42,518 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-16 23:25:49,832 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-16 23:25:49,850 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.81, 评价: 回答质量很高，准确且完整
+2025-05-16 23:25:49,867 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:25:49,867 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-16 23:25:49,869 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:25:49,869 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 7.36秒
+2025-05-16 23:25:49,869 - __main__ - INFO - [9/18] 测试: 参赛获奖证书如何颁发？
+2025-05-16 23:25:49,869 - __main__ - INFO - 测试问题: 参赛获奖证书如何颁发？
+2025-05-16 23:25:49,869 - app.models.MCPWithRAG - INFO - 处理问题: 参赛获奖证书如何颁发？
+2025-05-16 23:25:49,869 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:25:49,869 - app.models.SimpleRAG - INFO - 开始搜索: 查询='参赛获奖证书如何颁发？', 竞赛类型='None', top_n=5
+2025-05-16 23:25:49,870 - app.models.SimpleRAG - INFO - 从查询 '参赛获奖证书如何颁发？' 中提取关键词: ['参赛', '获奖', '证书', '颁发']
+2025-05-16 23:25:49,870 - app.models.SimpleRAG - INFO - 从查询 '参赛获奖证书如何颁发？' 中提取关键词: ['参赛', '获奖', '证书', '颁发']
+2025-05-16 23:25:49,870 - app.models.SimpleRAG - INFO - 基于关键词 ['参赛', '获奖', '证书', '颁发'] 找到 62 个候选文档
+2025-05-16 23:25:49,872 - app.models.SimpleRAG - INFO - 找到 62 个相关文档，其中 12 个通过阈值 0.3 过滤
+2025-05-16 23:25:49,872 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 19.45, 来源: 03_2024年（第12届）“泰迪杯”数据挖掘挑战赛竞赛通知.pdf, 内容开头: 资源免费学习一年。 
+特等奖：3 队，采用视频答辩的形式，由高校和企业专家综合
+评审，颁发“泰迪杯”...
+2025-05-16 23:25:49,873 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-16 23:25:49,873 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-16 23:26:00,632 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-16 23:26:00,655 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.81, 评价: 回答质量很高，准确且完整
+2025-05-16 23:26:00,677 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:26:00,677 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-16 23:26:00,678 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:26:00,678 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 10.81秒
+2025-05-16 23:26:00,678 - __main__ - INFO - [10/18] 测试: 如何确保我的竞赛作品不被剽窃？
+2025-05-16 23:26:00,679 - __main__ - INFO - 测试问题: 如何确保我的竞赛作品不被剽窃？
+2025-05-16 23:26:00,679 - app.models.MCPWithRAG - INFO - 处理问题: 如何确保我的竞赛作品不被剽窃？
+2025-05-16 23:26:00,679 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:26:00,680 - app.models.SimpleRAG - INFO - 开始搜索: 查询='如何确保我的竞赛作品不被剽窃？', 竞赛类型='None', top_n=5
+2025-05-16 23:26:00,681 - app.models.SimpleRAG - INFO - 从查询 '如何确保我的竞赛作品不被剽窃？' 中提取关键词: ['确保', '竞赛', '作品', '剽窃']
+2025-05-16 23:26:00,681 - app.models.SimpleRAG - INFO - 从查询 '如何确保我的竞赛作品不被剽窃？' 中提取关键词: ['确保', '竞赛', '作品', '剽窃']
+2025-05-16 23:26:00,681 - app.models.SimpleRAG - INFO - 基于关键词 ['确保', '竞赛', '作品', '剽窃'] 找到 69 个候选文档
+2025-05-16 23:26:00,684 - app.models.SimpleRAG - INFO - 找到 69 个相关文档，其中 12 个通过阈值 0.3 过滤
+2025-05-16 23:26:00,684 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 8.32, 来源: 02_3D编程模型创新设计专项赛.pdf, 内容开头: 4 
+作品评审阶段 
+⚫ 参赛学生提交作品将由专家评审委员会进行作品
+评审，并甄选出部分优秀参赛学生...
+2025-05-16 23:26:00,684 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-16 23:26:00,685 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-16 23:26:14,396 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-16 23:26:14,417 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.60, 评价: 回答基本符合要求，但可能有改进空间
+2025-05-16 23:26:14,436 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:26:14,436 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-16 23:26:14,437 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:26:14,437 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 13.76秒
+2025-05-16 23:26:14,437 - __main__ - INFO - [11/18] 测试: 参加3D编程模型创新设计专项赛需要什么编程基础？
+2025-05-16 23:26:14,438 - __main__ - INFO - 测试问题: 参加3D编程模型创新设计专项赛需要什么编程基础？
+2025-05-16 23:26:14,438 - app.models.MCPWithRAG - INFO - 处理问题: 参加3D编程模型创新设计专项赛需要什么编程基础？
+2025-05-16 23:26:14,438 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 3D编程模型创新设计专项赛
+2025-05-16 23:26:14,438 - app.models.SimpleRAG - INFO - 开始搜索: 查询='参加3D编程模型创新设计专项赛需要什么编程基础？', 竞赛类型='None', top_n=5
+2025-05-16 23:26:14,439 - app.models.SimpleRAG - INFO - 从查询 '参加3D编程模型创新设计专项赛需要什么编程基础？' 中提取关键词: ['设计', '3D编程模型创新设计专项赛', '模型', '参加', '编程', '创新', '专项', '基础']
+2025-05-16 23:26:14,439 - app.models.SimpleRAG - INFO - 从查询 '参加3D编程模型创新设计专项赛需要什么编程基础？' 中提取关键词: ['设计', '3D编程模型创新设计专项赛', '模型', '参加', '编程', '创新', '专项', '基础']
+2025-05-16 23:26:14,440 - app.models.SimpleRAG - INFO - 基于关键词 ['设计', '3D编程模型创新设计专项赛', '模型', '参加', '编程', '创新', '专项', '基础'] 找到 106 个候选文档
+2025-05-16 23:26:14,444 - app.models.SimpleRAG - INFO - 找到 106 个相关文档，其中 12 个通过阈值 0.3 过滤
+2025-05-16 23:26:14,444 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 22.66, 来源: 02_3D编程模型创新设计专项赛.pdf, 内容开头: 1 
+一、赛事简介 
+为了提升全国青少年科技素养，增强青少年对人工智能的了解，
+加强计算思维和设计能...
+2025-05-16 23:26:14,444 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-16 23:26:14,445 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-16 23:26:20,608 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-16 23:26:20,633 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.61, 评价: 回答基本符合要求，但可能有改进空间
+2025-05-16 23:26:20,660 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:26:20,660 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-16 23:26:20,660 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:26:20,661 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 6.22秒
+2025-05-16 23:26:20,661 - __main__ - INFO - [12/18] 测试: 太空电梯工程设计专项赛中对模型材料有什么要求？
+2025-05-16 23:26:20,662 - __main__ - INFO - 测试问题: 太空电梯工程设计专项赛中对模型材料有什么要求？
+2025-05-16 23:26:20,662 - app.models.MCPWithRAG - INFO - 处理问题: 太空电梯工程设计专项赛中对模型材料有什么要求？
+2025-05-16 23:26:20,663 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 太空电梯设计专项赛
+2025-05-16 23:26:20,663 - app.models.SimpleRAG - INFO - 开始搜索: 查询='太空电梯设计专项赛 太空电梯工程设计专项赛中对模型材料有什么要求？', 竞赛类型='None', top_n=5
+2025-05-16 23:26:20,665 - app.models.SimpleRAG - INFO - 从查询 '太空电梯设计专项赛 太空电梯工程设计专项赛中对模型材料有什么要求？' 中提取关键词: ['要求', '设计', '模型', '太空电梯设计专项赛', '太空', '电梯', '专项', '工程设计', '赛中', '模型材料']
+2025-05-16 23:26:20,665 - app.models.SimpleRAG - INFO - 从查询 '太空电梯设计专项赛 太空电梯工程设计专项赛中对模型材料有什么要求？' 中提取关键词: ['要求', '设计', '模型', '太空电梯设计专项赛', '太空', '电梯', '专项', '工程设计', '赛中', '模型材料']
+2025-05-16 23:26:20,666 - app.models.SimpleRAG - INFO - 基于关键词 ['要求', '设计', '模型', '太空电梯设计专项赛', '太空', '电梯', '专项', '工程设计', '赛中', '模型材料'] 找到 97 个候选文档
+2025-05-16 23:26:20,669 - app.models.SimpleRAG - INFO - 找到 97 个相关文档，其中 12 个通过阈值 0.3 过滤
+2025-05-16 23:26:20,670 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 21.27, 来源: 12_太空电梯工程设计专项赛.pdf, 内容开头: 9 
+电梯搭建高度(电梯最低点到提升装置最
+低点)不得低于75cm，超出部分以cm计算
+，不足1cm...
+2025-05-16 23:26:20,670 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-16 23:26:20,671 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-16 23:26:31,330 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-16 23:26:31,362 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.82, 评价: 回答质量很高，准确且完整
+2025-05-16 23:26:31,394 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:26:31,394 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-16 23:26:31,394 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:26:31,395 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 10.73秒
+2025-05-16 23:26:31,395 - __main__ - INFO - [13/18] 测试: 参赛团队可以跨学校组队吗？
+2025-05-16 23:26:31,395 - __main__ - INFO - 测试问题: 参赛团队可以跨学校组队吗？
+2025-05-16 23:26:31,395 - app.models.MCPWithRAG - INFO - 处理问题: 参赛团队可以跨学校组队吗？
+2025-05-16 23:26:31,396 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:26:31,396 - app.models.SimpleRAG - INFO - 开始搜索: 查询='参赛团队可以跨学校组队吗？', 竞赛类型='None', top_n=5
+2025-05-16 23:26:31,397 - app.models.SimpleRAG - INFO - 从查询 '参赛团队可以跨学校组队吗？' 中提取关键词: ['参赛', '团队', '学校', '组队']
+2025-05-16 23:26:31,397 - app.models.SimpleRAG - INFO - 从查询 '参赛团队可以跨学校组队吗？' 中提取关键词: ['参赛', '团队', '学校', '组队']
+2025-05-16 23:26:31,397 - app.models.SimpleRAG - INFO - 基于关键词 ['参赛', '团队', '学校', '组队'] 找到 67 个候选文档
+2025-05-16 23:26:31,401 - app.models.SimpleRAG - INFO - 找到 67 个相关文档，其中 12 个通过阈值 0.3 过滤
+2025-05-16 23:26:31,401 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 15.43, 来源: 18_智能芯片与计算思维专项赛.pdf, 内容开头:  - 3 - 
+费用；不会以任何方式向学生或组织学生参赛的学校转嫁竞赛活动成本。
+本次挑战赛坚持自愿...
+2025-05-16 23:26:31,402 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-16 23:26:31,402 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-16 23:26:49,607 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-16 23:26:49,642 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.80, 评价: 回答质量很高，准确且完整
+2025-05-16 23:26:49,671 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:26:49,672 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-16 23:26:49,672 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:26:49,672 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 18.28秒
+2025-05-16 23:26:49,673 - __main__ - INFO - [14/18] 测试: 若竞赛过程中遇到技术问题如何寻求帮助？
+2025-05-16 23:26:49,673 - __main__ - INFO - 测试问题: 若竞赛过程中遇到技术问题如何寻求帮助？
+2025-05-16 23:26:49,673 - app.models.MCPWithRAG - INFO - 处理问题: 若竞赛过程中遇到技术问题如何寻求帮助？
+2025-05-16 23:26:49,673 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:26:49,673 - app.models.SimpleRAG - INFO - 开始搜索: 查询='若竞赛过程中遇到技术问题如何寻求帮助？', 竞赛类型='None', top_n=5
+2025-05-16 23:26:49,674 - app.models.SimpleRAG - INFO - 从查询 '若竞赛过程中遇到技术问题如何寻求帮助？' 中提取关键词: ['竞赛', '过程', '遇到', '技术', '问题', '寻求', '帮助']
+2025-05-16 23:26:49,674 - app.models.SimpleRAG - INFO - 从查询 '若竞赛过程中遇到技术问题如何寻求帮助？' 中提取关键词: ['竞赛', '过程', '遇到', '技术', '问题', '寻求', '帮助']
+2025-05-16 23:26:49,674 - app.models.SimpleRAG - INFO - 基于关键词 ['竞赛', '过程', '遇到', '技术', '问题', '寻求', '帮助'] 找到 64 个候选文档
+2025-05-16 23:26:49,676 - app.models.SimpleRAG - INFO - 找到 64 个相关文档，其中 12 个通过阈值 0.3 过滤
+2025-05-16 23:26:49,676 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 10.20, 来源: 10_三维程序创意设计专项赛.pdf, 内容开头: 6 
+程序技术
+能力 
+本项目评价作品的编
+程技术使用。要求创
+作者在创作作品时合
+理正确地使用编程...
+2025-05-16 23:26:49,677 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-16 23:26:49,677 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-16 23:27:01,792 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-16 23:27:01,822 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.74, 评价: 回答质量很高，准确且完整
+2025-05-16 23:27:01,850 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:27:01,851 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-16 23:27:01,851 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:27:01,851 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 12.18秒
+2025-05-16 23:27:01,852 - __main__ - INFO - [15/18] 测试: 比赛前是否有相关培训？
+2025-05-16 23:27:01,852 - __main__ - INFO - 测试问题: 比赛前是否有相关培训？
+2025-05-16 23:27:01,852 - app.models.MCPWithRAG - INFO - 处理问题: 比赛前是否有相关培训？
+2025-05-16 23:27:01,852 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:27:01,853 - app.models.SimpleRAG - INFO - 开始搜索: 查询='比赛前是否有相关培训？', 竞赛类型='None', top_n=5
+2025-05-16 23:27:01,853 - app.models.SimpleRAG - INFO - 从查询 '比赛前是否有相关培训？' 中提取关键词: ['比赛', '是否', '相关', '培训']
+2025-05-16 23:27:01,853 - app.models.SimpleRAG - INFO - 从查询 '比赛前是否有相关培训？' 中提取关键词: ['比赛', '是否', '相关', '培训']
+2025-05-16 23:27:01,853 - app.models.SimpleRAG - INFO - 基于关键词 ['比赛', '是否', '相关', '培训'] 找到 79 个候选文档
+2025-05-16 23:27:01,857 - app.models.SimpleRAG - INFO - 找到 79 个相关文档，其中 12 个通过阈值 0.3 过滤
+2025-05-16 23:27:01,857 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 7.96, 来源: 08_开源鸿蒙机器人专项赛.pdf, 内容开头: 3 
+控制任务、元宇宙任务组成，比赛结束时，元宇宙任务部分将会在虚拟
+现实场景中展示比赛得分情况。 ...
+2025-05-16 23:27:01,857 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-16 23:27:01,858 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-16 23:27:11,728 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-16 23:27:11,755 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.65, 评价: 回答质量很高，准确且完整
+2025-05-16 23:27:11,788 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:27:11,789 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-16 23:27:11,789 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:27:11,790 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 9.94秒
+2025-05-16 23:27:11,790 - __main__ - INFO - [16/18] 测试: 这是一个测试问题
+2025-05-16 23:27:11,791 - __main__ - INFO - 测试问题: 这是一个测试问题
+2025-05-16 23:27:11,791 - app.models.MCPWithRAG - INFO - 处理问题: 这是一个测试问题
+2025-05-16 23:27:11,791 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:27:11,792 - app.models.SimpleRAG - INFO - 开始搜索: 查询='这是一个测试问题', 竞赛类型='None', top_n=5
+2025-05-16 23:27:11,792 - app.models.SimpleRAG - INFO - 从查询 '这是一个测试问题' 中提取关键词: ['测试', '问题']
+2025-05-16 23:27:11,792 - app.models.SimpleRAG - INFO - 从查询 '这是一个测试问题' 中提取关键词: ['测试', '问题']
+2025-05-16 23:27:11,793 - app.models.SimpleRAG - INFO - 基于关键词 ['测试', '问题'] 找到 11 个候选文档
+2025-05-16 23:27:11,793 - app.models.SimpleRAG - INFO - 找到 11 个相关文档，其中 11 个通过阈值 0.3 过滤
+2025-05-16 23:27:11,793 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 11 个结果，最高得分: 6.40, 来源: 09_人工智能综合创新专项赛.pdf, 内容开头: 12 
+简要地叙述为什么对这个问题进行调查；调查的时间、地点、对象、
+范围、经过及采用的方法等。要求...
+2025-05-16 23:27:11,794 - app.models.MCPWithRAG - INFO - 找到 11 个相关文档
+2025-05-16 23:27:11,794 - app.models.MCPWithContext - INFO - 已添加 11 个文档作为上下文
+2025-05-16 23:27:17,637 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-16 23:27:17,661 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.57, 评价: 回答基本符合要求，但可能有改进空间
+2025-05-16 23:27:17,685 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:27:17,685 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-16 23:27:17,686 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:27:17,686 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 5.90秒
+2025-05-16 23:27:17,687 - __main__ - INFO - [17/18] 测试: 请你谈谈你对人工智能的看法
+2025-05-16 23:27:17,687 - __main__ - INFO - 测试问题: 请你谈谈你对人工智能的看法
+2025-05-16 23:27:17,687 - app.models.MCPWithRAG - INFO - 处理问题: 请你谈谈你对人工智能的看法
+2025-05-16 23:27:17,687 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:27:17,688 - app.models.SimpleRAG - INFO - 开始搜索: 查询='请你谈谈你对人工智能的看法', 竞赛类型='None', top_n=5
+2025-05-16 23:27:17,688 - app.models.SimpleRAG - INFO - 从查询 '请你谈谈你对人工智能的看法' 中提取关键词: ['谈谈', '人工智能', '看法']
+2025-05-16 23:27:17,689 - app.models.SimpleRAG - INFO - 从查询 '请你谈谈你对人工智能的看法' 中提取关键词: ['谈谈', '人工智能', '看法']
+2025-05-16 23:27:17,689 - app.models.SimpleRAG - INFO - 基于关键词 ['谈谈', '人工智能', '看法'] 找到 54 个候选文档
+2025-05-16 23:27:17,691 - app.models.SimpleRAG - INFO - 找到 54 个相关文档，其中 12 个通过阈值 0.3 过滤
+2025-05-16 23:27:17,691 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 4.43, 来源: 13_太空探索智能机器人专项赛.pdf, 内容开头: 6 
+(30%) 
+通过编程实现相关功能、会运用常用的算法。
+代码结构合理、具有可读性。 
+项目完成...
+2025-05-16 23:27:17,691 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-16 23:27:17,692 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-16 23:27:28,778 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-16 23:27:28,809 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.69, 评价: 回答质量很高，准确且完整
+2025-05-16 23:27:28,834 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:27:28,834 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-16 23:27:28,834 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:27:28,835 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 11.15秒
+2025-05-16 23:27:28,835 - __main__ - INFO - [18/18] 测试: 世界上最高的山峰是什么？
+2025-05-16 23:27:28,835 - __main__ - INFO - 测试问题: 世界上最高的山峰是什么？
+2025-05-16 23:27:28,836 - app.models.MCPWithRAG - INFO - 处理问题: 世界上最高的山峰是什么？
+2025-05-16 23:27:28,836 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-16 23:27:28,837 - app.models.SimpleRAG - INFO - 开始搜索: 查询='世界上最高的山峰是什么？', 竞赛类型='None', top_n=5
+2025-05-16 23:27:28,837 - app.models.SimpleRAG - INFO - 从查询 '世界上最高的山峰是什么？' 中提取关键词: ['世界', '最高', '山峰']
+2025-05-16 23:27:28,837 - app.models.SimpleRAG - INFO - 从查询 '世界上最高的山峰是什么？' 中提取关键词: ['世界', '最高', '山峰']
+2025-05-16 23:27:28,838 - app.models.SimpleRAG - INFO - 基于关键词 ['世界', '最高', '山峰'] 找到 4 个候选文档
+2025-05-16 23:27:28,838 - app.models.SimpleRAG - INFO - 找到 4 个相关文档，其中 4 个通过阈值 0.3 过滤
+2025-05-16 23:27:28,838 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 4 个结果，最高得分: 3.92, 来源: 09_人工智能综合创新专项赛.pdf, 内容开头: 12 
+3.参赛队伍由可个人或团队组成，团队人数为2—3人，凡有合作者
+的个人成果或者团队参赛成果，...
+2025-05-16 23:27:28,839 - app.models.MCPWithRAG - INFO - 找到 4 个相关文档
+2025-05-16 23:27:28,839 - app.models.MCPWithContext - INFO - 已添加 4 个文档作为上下文
+2025-05-16 23:27:31,550 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-16 23:27:31,564 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.41, 评价: 回答有一定参考价值，但存在明显问题
+2025-05-16 23:27:31,576 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-16 23:27:31,576 - app.models.MCPWithRAG - INFO - 计算置信度: 0.91
+2025-05-16 23:27:31,577 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-16 23:27:31,577 - __main__ - INFO - 问题处理完成，置信度: 0.91, 耗时: 2.74秒
+2025-05-16 23:27:31,579 - __main__ - INFO - 测试结果已保存至: test_results/test_results_20250516_232731.json
+2025-05-16 23:27:31,579 - __main__ - INFO - 
+====== 测试分析报告 ======
+2025-05-16 23:27:31,579 - __main__ - INFO - 测试问题总数: 18
+2025-05-16 23:27:31,581 - __main__ - INFO - 成功处理数: 18
+2025-05-16 23:27:31,581 - __main__ - INFO - 成功率: 100.0%
+2025-05-16 23:27:31,581 - __main__ - INFO - 平均置信度: 0.99
+2025-05-16 23:27:31,581 - __main__ - INFO - 平均处理时间: 11.30秒
+2025-05-16 23:27:31,581 - __main__ - INFO - 
+置信度分布:
+2025-05-16 23:27:31,582 - __main__ - INFO -   高 (>0.7): 18 个问题 (100.0%)
+2025-05-16 23:27:31,582 - __main__ - INFO -   中 (0.4-0.7): 0 个问题 (0.0%)
+2025-05-16 23:27:31,582 - __main__ - INFO -   低 (0.2-0.4): 0 个问题 (0.0%)
+2025-05-16 23:27:31,582 - __main__ - INFO -   极低 (<0.2): 0 个问题 (0.0%)
+2025-05-16 23:27:31,583 - __main__ - INFO - 
+测试完成！
+2025-05-17 20:23:59,998 - __main__ - INFO - 开始批量测试...
+2025-05-17 20:24:01,492 - config - INFO - 系统配置已加载: 竞赛智能客服系统 v5.0.0
+2025-05-17 20:24:01,492 - config - INFO - API服务: 0.0.0.0:53085
+2025-05-17 20:24:01,493 - config - INFO - 知识库路径: d:/teddy-cup/data/knowledge/docs/附件1/
+2025-05-17 20:24:01,493 - config - INFO - TXT路径: d:/teddy-cup/data/knowledge/txt
+2025-05-17 20:24:01,493 - config - INFO - 日志级别: INFO
+2025-05-17 20:24:01,493 - config - INFO - RAG状态: 已启用
+2025-05-17 20:24:01,494 - config - INFO - 支持的竞赛数量: 16
+2025-05-17 20:24:02,735 - __main__ - INFO - 初始化MCPWithRAG引擎...
+2025-05-17 20:24:02,746 - app.models.SimpleRAG - INFO - 成功加载 334 个停用词
+2025-05-17 20:24:02,789 - app.models.SimpleRAG - INFO - 成功加载索引，包含 296 个文档，1482 个关键词
+2025-05-17 20:24:02,790 - app.models.SimpleRAG - INFO - 简化版RAG引擎初始化完成，索引包含 296 个文档片段，阈值设置为 0.3
+2025-05-17 20:24:03,394 - app.models.MCPWithContext - INFO - MCP引擎初始化完成，使用模型: qwen-max
+2025-05-17 20:24:03,395 - qa_evaluator - INFO - 答案评估器初始化完成
+2025-05-17 20:24:03,395 - app.models.MCPWithRAG - INFO - MCP+RAG集成引擎初始化完成
+2025-05-17 20:24:03,395 - __main__ - INFO - 开始测试 18 个问题...
+2025-05-17 20:24:03,395 - __main__ - INFO - [1/18] 测试: 泰迪杯数据挖掘挑战赛是什么比赛？
+2025-05-17 20:24:03,396 - __main__ - INFO - 测试问题: 泰迪杯数据挖掘挑战赛是什么比赛？
+2025-05-17 20:24:03,396 - app.models.MCPWithRAG - INFO - 处理问题: 泰迪杯数据挖掘挑战赛是什么比赛？
+2025-05-17 20:24:03,403 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-17 20:24:03,403 - app.models.SimpleRAG - INFO - 开始搜索: 查询='泰迪杯数据挖掘挑战赛是什么比赛？', 竞赛类型='None', top_n=5
+2025-05-17 20:24:03,403 - jieba - DEBUG - Building prefix dict from the default dictionary ...
+2025-05-17 20:24:03,406 - jieba - DEBUG - Loading model from cache C:\Users\LEGION\AppData\Local\Temp\jieba.cache
+2025-05-17 20:24:04,238 - jieba - DEBUG - Loading model cost 0.834 seconds.
+2025-05-17 20:24:04,239 - jieba - DEBUG - Prefix dict has been built successfully.
+2025-05-17 20:24:04,240 - app.models.SimpleRAG - INFO - 从查询 '泰迪杯数据挖掘挑战赛是什么比赛？' 中提取关键词: ['泰迪杯', '数据挖掘', '挑战赛', '比赛']
+2025-05-17 20:24:04,241 - app.models.SimpleRAG - INFO - 从查询 '泰迪杯数据挖掘挑战赛是什么比赛？' 中提取关键词: ['泰迪杯', '数据挖掘', '挑战赛', '比赛']
+2025-05-17 20:24:04,241 - app.models.SimpleRAG - INFO - 基于关键词 ['泰迪杯', '数据挖掘', '挑战赛', '比赛'] 找到 96 个候选文档
+2025-05-17 20:24:04,246 - app.models.SimpleRAG - INFO - 找到 96 个相关文档，其中 12 个通过阈值 0.24 过滤
+2025-05-17 20:24:04,246 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 17.55, 来源: 03_2024年（第12届）“泰迪杯”数据挖掘挑战赛竞赛通知.pdf, 内容开头: 泰迪杯组委会〔2024〕1号 
+2024 年（第12 届）“泰迪杯”数据挖掘挑战赛 
+竞赛通知 
+各...
+2025-05-17 20:24:04,247 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-17 20:24:04,247 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-17 20:24:35,911 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-17 20:24:35,949 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.87, 评价: 回答质量很高，准确且完整
+2025-05-17 20:24:35,985 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-17 20:24:35,985 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-17 20:24:35,985 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-17 20:24:35,986 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 32.59秒
+2025-05-17 20:24:35,986 - __main__ - INFO - [2/18] 测试: 3D编程模型创新设计专项赛的参赛要求是什么？
+2025-05-17 20:24:35,986 - __main__ - INFO - 测试问题: 3D编程模型创新设计专项赛的参赛要求是什么？
+2025-05-17 20:24:35,986 - app.models.MCPWithRAG - INFO - 处理问题: 3D编程模型创新设计专项赛的参赛要求是什么？
+2025-05-17 20:24:35,987 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 3D编程模型创新设计专项赛
+2025-05-17 20:24:35,987 - app.models.SimpleRAG - INFO - 开始搜索: 查询='3D编程模型创新设计专项赛的参赛要求是什么？', 竞赛类型='None', top_n=5
+2025-05-17 20:24:35,988 - app.models.SimpleRAG - INFO - 检测到竞赛专有名词: 3D编程模型创新设计专项赛
+2025-05-17 20:24:35,988 - app.models.SimpleRAG - INFO - 从查询 '3D编程模型创新设计专项赛的参赛要求是什么？' 中提取关键词: ['3D编程模型创新设计专项赛', '设计', '要求', '模型', '参赛要求', '编程', '创新', '专项', '参赛']
+2025-05-17 20:24:35,989 - app.models.SimpleRAG - INFO - 从查询 '3D编程模型创新设计专项赛的参赛要求是什么？' 中提取关键词: ['3D编程模型创新设计专项赛', '设计', '要求', '模型', '参赛要求', '编程', '创新', '专项', '参赛']
+2025-05-17 20:24:35,989 - app.models.SimpleRAG - INFO - 基于关键词 ['3D编程模型创新设计专项赛', '设计', '要求', '模型', '参赛要求', '编程', '创新', '专项', '参赛'] 找到 225 个候选文档
+2025-05-17 20:24:36,002 - app.models.SimpleRAG - INFO - 找到 225 个相关文档，其中 12 个通过阈值 0.24 过滤
+2025-05-17 20:24:36,002 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 23.45, 来源: 15_虚拟仿真平台创新设计专项赛.pdf, 内容开头: 2 
+（一）参赛要求 
+1.在校小学、初中、高中、中专或职高学生均可参赛。 
+2.选手所在学段组别分...
+2025-05-17 20:24:36,002 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-17 20:24:36,003 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-17 20:24:51,616 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-17 20:24:51,651 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.94, 评价: 回答质量很高，准确且完整
+2025-05-17 20:24:51,682 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-17 20:24:51,683 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-17 20:24:51,683 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-17 20:24:51,683 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 15.70秒
+2025-05-17 20:24:51,684 - __main__ - INFO - [3/18] 测试: 机器人工程设计专项赛需要提交哪些材料？
+2025-05-17 20:24:51,684 - __main__ - INFO - 测试问题: 机器人工程设计专项赛需要提交哪些材料？
+2025-05-17 20:24:51,684 - app.models.MCPWithRAG - INFO - 处理问题: 机器人工程设计专项赛需要提交哪些材料？
+2025-05-17 20:24:51,685 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 机器人工程挑战赛
+2025-05-17 20:24:51,685 - app.models.SimpleRAG - INFO - 开始搜索: 查询='机器人工程挑战赛 机器人工程设计专项赛需要提交哪些材料？', 竞赛类型='None', top_n=5
+2025-05-17 20:24:51,685 - app.models.SimpleRAG - INFO - 检测到竞赛专有名词: 机器人工程挑战赛
+2025-05-17 20:24:51,686 - app.models.SimpleRAG - INFO - 从查询 '机器人工程挑战赛 机器人工程设计专项赛需要提交哪些材料？' 中提取关键词: ['机器人工程挑战赛', '设计', '机器人', '工程', '挑战赛', '工程设计', '专项', '提交', '材料']
+2025-05-17 20:24:51,686 - app.models.SimpleRAG - INFO - 从查询 '机器人工程挑战赛 机器人工程设计专项赛需要提交哪些材料？' 中提取关键词: ['机器人工程挑战赛', '设计', '机器人', '工程', '挑战赛', '工程设计', '专项', '提交', '材料']
+2025-05-17 20:24:51,686 - app.models.SimpleRAG - INFO - 基于关键词 ['机器人工程挑战赛', '设计', '机器人', '工程', '挑战赛', '工程设计', '专项', '提交', '材料'] 找到 190 个候选文档
+2025-05-17 20:24:51,694 - app.models.SimpleRAG - INFO - 找到 190 个相关文档，其中 12 个通过阈值 0.24 过滤
+2025-05-17 20:24:51,695 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 19.98, 来源: 05_机器人工程设计专项赛.pdf, 内容开头: — 4 —
+参加选拔赛的青少年需通过“人工智能创新挑战赛”网站点击击链
+接，选择“机器人工程设计专项...
+2025-05-17 20:24:51,695 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-17 20:24:51,695 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-17 20:25:01,997 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-17 20:25:02,026 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.85, 评价: 回答质量很高，准确且完整
+2025-05-17 20:25:02,055 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-17 20:25:02,056 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-17 20:25:02,056 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-17 20:25:02,056 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 10.37秒
+2025-05-17 20:25:02,056 - __main__ - INFO - [4/18] 测试: 太空电梯工程设计专项赛的评分标准是什么？
+2025-05-17 20:25:02,057 - __main__ - INFO - 测试问题: 太空电梯工程设计专项赛的评分标准是什么？
+2025-05-17 20:25:02,057 - app.models.MCPWithRAG - INFO - 处理问题: 太空电梯工程设计专项赛的评分标准是什么？
+2025-05-17 20:25:02,057 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 太空电梯设计专项赛
+2025-05-17 20:25:02,057 - app.models.SimpleRAG - INFO - 开始搜索: 查询='太空电梯设计专项赛 太空电梯工程设计专项赛的评分标准是什么？', 竞赛类型='None', top_n=5
+2025-05-17 20:25:02,058 - app.models.SimpleRAG - INFO - 检测到竞赛专有名词: 太空电梯设计专项赛
+2025-05-17 20:25:02,058 - app.models.SimpleRAG - INFO - 从查询 '太空电梯设计专项赛 太空电梯工程设计专项赛的评分标准是什么？' 中提取关键词: ['太空电梯设计专项赛', '设计', '评分标准', '太空', '电梯', '专项', '工程设计']
+2025-05-17 20:25:02,058 - app.models.SimpleRAG - INFO - 从查询 '太空电梯设计专项赛 太空电梯工程设计专项赛的评分标准是什么？' 中提取关键词: ['太空电梯设计专项赛', '设计', '评分标准', '太空', '电梯', '专项', '工程设计']
+2025-05-17 20:25:02,059 - app.models.SimpleRAG - INFO - 基于关键词 ['太空电梯设计专项赛', '设计', '评分标准', '太空', '电梯', '专项', '工程设计'] 找到 117 个候选文档
+2025-05-17 20:25:02,063 - app.models.SimpleRAG - INFO - 找到 117 个相关文档，其中 12 个通过阈值 0.24 过滤
+2025-05-17 20:25:02,063 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 18.89, 来源: 12_太空电梯工程设计专项赛.pdf, 内容开头: 4 
+参赛选手使用提前设计并打印的连接件、电子件与其它材料搭建太空
+电梯模型。搭建过程中选手可根据设...
+2025-05-17 20:25:02,063 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-17 20:25:02,064 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-17 20:25:19,398 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-17 20:25:19,430 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.91, 评价: 回答质量很高，准确且完整
+2025-05-17 20:25:19,459 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-17 20:25:19,460 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-17 20:25:19,460 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-17 20:25:19,460 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 17.40秒
+2025-05-17 20:25:19,460 - __main__ - INFO - [5/18] 测试: 虚拟仿真平台创新设计专项赛的参赛对象有哪些？
+2025-05-17 20:25:19,461 - __main__ - INFO - 测试问题: 虚拟仿真平台创新设计专项赛的参赛对象有哪些？
+2025-05-17 20:25:19,461 - app.models.MCPWithRAG - INFO - 处理问题: 虚拟仿真平台创新设计专项赛的参赛对象有哪些？
+2025-05-17 20:25:19,461 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 虚拟仿真平台创新设计专项赛
+2025-05-17 20:25:19,462 - app.models.SimpleRAG - INFO - 开始搜索: 查询='虚拟仿真平台创新设计专项赛的参赛对象有哪些？', 竞赛类型='None', top_n=5
+2025-05-17 20:25:19,462 - app.models.SimpleRAG - INFO - 检测到竞赛专有名词: 虚拟仿真平台创新设计专项赛
+2025-05-17 20:25:19,463 - app.models.SimpleRAG - INFO - 从查询 '虚拟仿真平台创新设计专项赛的参赛对象有哪些？' 中提取关键词: ['虚拟仿真平台创新设计专项赛', '设计', '虚拟', '平台', '创新', '专项', '参赛', '对象']
+2025-05-17 20:25:19,463 - app.models.SimpleRAG - INFO - 从查询 '虚拟仿真平台创新设计专项赛的参赛对象有哪些？' 中提取关键词: ['虚拟仿真平台创新设计专项赛', '设计', '虚拟', '平台', '创新', '专项', '参赛', '对象']
+2025-05-17 20:25:19,463 - app.models.SimpleRAG - INFO - 基于关键词 ['虚拟仿真平台创新设计专项赛', '设计', '虚拟', '平台', '创新', '专项', '参赛', '对象'] 找到 153 个候选文档
+2025-05-17 20:25:19,471 - app.models.SimpleRAG - INFO - 找到 153 个相关文档，其中 12 个通过阈值 0.24 过滤
+2025-05-17 20:25:19,472 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 34.03, 来源: 15_虚拟仿真平台创新设计专项赛.pdf, 内容开头: 1 
+一、赛事简介 
+虚拟仿真平台创新设计专项赛利用先进的人工智能算法和图像处理
+技术，模拟真实世界...
+2025-05-17 20:25:19,472 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-17 20:25:19,472 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-17 20:25:23,890 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-17 20:25:23,916 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.84, 评价: 回答质量很高，准确且完整
+2025-05-17 20:25:23,938 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-17 20:25:23,938 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-17 20:25:23,938 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-17 20:25:23,939 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 4.48秒
+2025-05-17 20:25:23,939 - __main__ - INFO - [6/18] 测试: 开源鸿蒙机器人专项赛的比赛流程是怎样的？
+2025-05-17 20:25:23,939 - __main__ - INFO - 测试问题: 开源鸿蒙机器人专项赛的比赛流程是怎样的？
+2025-05-17 20:25:23,940 - app.models.MCPWithRAG - INFO - 处理问题: 开源鸿蒙机器人专项赛的比赛流程是怎样的？
+2025-05-17 20:25:23,940 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 开源鸿蒙专项赛
+2025-05-17 20:25:23,941 - app.models.SimpleRAG - INFO - 开始搜索: 查询='开源鸿蒙专项赛 开源鸿蒙机器人专项赛的比赛流程是怎样的？', 竞赛类型='None', top_n=5
+2025-05-17 20:25:23,942 - app.models.SimpleRAG - INFO - 检测到竞赛专有名词: 开源鸿蒙专项赛
+2025-05-17 20:25:23,942 - app.models.SimpleRAG - INFO - 从查询 '开源鸿蒙专项赛 开源鸿蒙机器人专项赛的比赛流程是怎样的？' 中提取关键词: ['开源鸿蒙专项赛', '开源', '鸿蒙', '专项', '机器人', '比赛', '流程']
+2025-05-17 20:25:23,943 - app.models.SimpleRAG - INFO - 从查询 '开源鸿蒙专项赛 开源鸿蒙机器人专项赛的比赛流程是怎样的？' 中提取关键词: ['开源鸿蒙专项赛', '开源', '鸿蒙', '专项', '机器人', '比赛', '流程']
+2025-05-17 20:25:23,943 - app.models.SimpleRAG - INFO - 基于关键词 ['开源鸿蒙专项赛', '开源', '鸿蒙', '专项', '机器人', '比赛', '流程'] 找到 115 个候选文档
+2025-05-17 20:25:23,949 - app.models.SimpleRAG - INFO - 找到 115 个相关文档，其中 12 个通过阈值 0.24 过滤
+2025-05-17 20:25:23,950 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 13.98, 来源: 08_开源鸿蒙机器人专项赛.pdf, 内容开头: 4 
+1.比赛报名：参加活动的青少年通过访问“人工智能创新挑战赛”
+网站https://aiic.c...
+2025-05-17 20:25:23,950 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-17 20:25:23,950 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-17 20:25:44,838 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-17 20:25:44,866 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.93, 评价: 回答质量很高，准确且完整
+2025-05-17 20:25:44,895 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-17 20:25:44,895 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-17 20:25:44,895 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 20.95秒
+2025-05-17 20:25:44,896 - __main__ - INFO - [7/18] 测试: 所有竞赛的报名方式是什么？
+2025-05-17 20:25:44,896 - __main__ - INFO - 测试问题: 所有竞赛的报名方式是什么？
+2025-05-17 20:25:44,896 - app.models.MCPWithRAG - INFO - 处理问题: 所有竞赛的报名方式是什么？
+2025-05-17 20:25:44,896 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-17 20:25:44,896 - app.models.SimpleRAG - INFO - 开始搜索: 查询='所有竞赛的报名方式是什么？', 竞赛类型='None', top_n=5
+2025-05-17 20:25:44,897 - app.models.SimpleRAG - INFO - 从查询 '所有竞赛的报名方式是什么？' 中提取关键词: ['报名方式', '报名', '竞赛', '方式']
+2025-05-17 20:25:44,897 - app.models.SimpleRAG - INFO - 从查询 '所有竞赛的报名方式是什么？' 中提取关键词: ['报名方式', '报名', '竞赛', '方式']
+2025-05-17 20:25:44,897 - app.models.SimpleRAG - INFO - 基于关键词 ['报名方式', '报名', '竞赛', '方式'] 找到 71 个候选文档
+2025-05-17 20:25:44,900 - app.models.SimpleRAG - INFO - 找到 71 个相关文档，其中 12 个通过阈值 0.24 过滤
+2025-05-17 20:25:44,900 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 12.07, 来源: 15_虚拟仿真平台创新设计专项赛.pdf, 内容开头: 3 
+（三）竞赛方式 
+1.比赛形式为虚拟竞赛，总时长为90 分钟。 
+2.提交分数后系统会自行记录...
+2025-05-17 20:25:44,900 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-17 20:25:44,900 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-17 20:25:52,818 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-17 20:25:52,850 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.79, 评价: 回答质量很高，准确且完整
+2025-05-17 20:25:52,878 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-17 20:25:52,879 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-17 20:25:52,879 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-17 20:25:52,879 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 7.98秒
+2025-05-17 20:25:52,880 - __main__ - INFO - [8/18] 测试: 竞赛作品提交的截止日期是什么时候？
+2025-05-17 20:25:52,880 - __main__ - INFO - 测试问题: 竞赛作品提交的截止日期是什么时候？
+2025-05-17 20:25:52,880 - app.models.MCPWithRAG - INFO - 处理问题: 竞赛作品提交的截止日期是什么时候？
+2025-05-17 20:25:52,881 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-17 20:25:52,881 - app.models.SimpleRAG - INFO - 开始搜索: 查询='竞赛作品提交的截止日期是什么时候？', 竞赛类型='None', top_n=5
+2025-05-17 20:25:52,881 - app.models.SimpleRAG - INFO - 从查询 '竞赛作品提交的截止日期是什么时候？' 中提取关键词: ['作品提交', '竞赛', '作品', '提交', '截止', '时候']
+2025-05-17 20:25:52,882 - app.models.SimpleRAG - INFO - 从查询 '竞赛作品提交的截止日期是什么时候？' 中提取关键词: ['作品提交', '竞赛', '作品', '提交', '截止', '时候']
+2025-05-17 20:25:52,882 - app.models.SimpleRAG - INFO - 基于关键词 ['作品提交', '竞赛', '作品', '提交', '截止', '时候'] 找到 61 个候选文档
+2025-05-17 20:25:52,885 - app.models.SimpleRAG - INFO - 找到 61 个相关文档，其中 12 个通过阈值 0.24 过滤
+2025-05-17 20:25:52,885 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 10.63, 来源: 02_3D编程模型创新设计专项赛.pdf, 内容开头: 4 
+作品评审阶段 
+⚫ 参赛学生提交作品将由专家评审委员会进行作品
+评审，并甄选出部分优秀参赛学生...
+2025-05-17 20:25:52,885 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-17 20:25:52,886 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-17 20:25:58,466 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-17 20:25:58,490 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.79, 评价: 回答质量很高，准确且完整
+2025-05-17 20:25:58,509 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-17 20:25:58,510 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-17 20:25:58,510 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-17 20:25:58,510 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 5.63秒
+2025-05-17 20:25:58,511 - __main__ - INFO - [9/18] 测试: 参赛获奖证书如何颁发？
+2025-05-17 20:25:58,511 - __main__ - INFO - 测试问题: 参赛获奖证书如何颁发？
+2025-05-17 20:25:58,511 - app.models.MCPWithRAG - INFO - 处理问题: 参赛获奖证书如何颁发？
+2025-05-17 20:25:58,512 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-17 20:25:58,512 - app.models.SimpleRAG - INFO - 开始搜索: 查询='参赛获奖证书如何颁发？', 竞赛类型='None', top_n=5
+2025-05-17 20:25:58,512 - app.models.SimpleRAG - INFO - 从查询 '参赛获奖证书如何颁发？' 中提取关键词: ['参赛', '获奖', '证书', '颁发']
+2025-05-17 20:25:58,512 - app.models.SimpleRAG - INFO - 从查询 '参赛获奖证书如何颁发？' 中提取关键词: ['参赛', '获奖', '证书', '颁发']
+2025-05-17 20:25:58,512 - app.models.SimpleRAG - INFO - 基于关键词 ['参赛', '获奖', '证书', '颁发'] 找到 53 个候选文档
+2025-05-17 20:25:58,514 - app.models.SimpleRAG - INFO - 找到 53 个相关文档，其中 12 个通过阈值 0.24 过滤
+2025-05-17 20:25:58,515 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 19.45, 来源: 03_2024年（第12届）“泰迪杯”数据挖掘挑战赛竞赛通知.pdf, 内容开头: 资源免费学习一年。 
+特等奖：3 队，采用视频答辩的形式，由高校和企业专家综合
+评审，颁发“泰迪杯”...
+2025-05-17 20:25:58,515 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-17 20:25:58,515 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-17 20:26:08,534 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-17 20:26:08,562 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.75, 评价: 回答质量很高，准确且完整
+2025-05-17 20:26:08,593 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-17 20:26:08,594 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-17 20:26:08,594 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-17 20:26:08,594 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 10.08秒
+2025-05-17 20:26:08,595 - __main__ - INFO - [10/18] 测试: 如何确保我的竞赛作品不被剽窃？
+2025-05-17 20:26:08,595 - __main__ - INFO - 测试问题: 如何确保我的竞赛作品不被剽窃？
+2025-05-17 20:26:08,595 - app.models.MCPWithRAG - INFO - 处理问题: 如何确保我的竞赛作品不被剽窃？
+2025-05-17 20:26:08,596 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-17 20:26:08,596 - app.models.SimpleRAG - INFO - 开始搜索: 查询='如何确保我的竞赛作品不被剽窃？', 竞赛类型='None', top_n=5
+2025-05-17 20:26:08,597 - app.models.SimpleRAG - INFO - 从查询 '如何确保我的竞赛作品不被剽窃？' 中提取关键词: ['确保', '竞赛', '作品', '剽窃']
+2025-05-17 20:26:08,597 - app.models.SimpleRAG - INFO - 从查询 '如何确保我的竞赛作品不被剽窃？' 中提取关键词: ['确保', '竞赛', '作品', '剽窃']
+2025-05-17 20:26:08,598 - app.models.SimpleRAG - INFO - 基于关键词 ['确保', '竞赛', '作品', '剽窃'] 找到 59 个候选文档
+2025-05-17 20:26:08,600 - app.models.SimpleRAG - INFO - 找到 59 个相关文档，其中 12 个通过阈值 0.24 过滤
+2025-05-17 20:26:08,600 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 8.32, 来源: 02_3D编程模型创新设计专项赛.pdf, 内容开头: 4 
+作品评审阶段 
+⚫ 参赛学生提交作品将由专家评审委员会进行作品
+评审，并甄选出部分优秀参赛学生...
+2025-05-17 20:26:08,600 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-17 20:26:08,601 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-17 20:26:21,695 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-17 20:26:21,718 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.55, 评价: 回答基本符合要求，但可能有改进空间
+2025-05-17 20:26:21,738 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-17 20:26:21,739 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-17 20:26:21,739 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-17 20:26:21,739 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 13.14秒
+2025-05-17 20:26:21,740 - __main__ - INFO - [11/18] 测试: 参加3D编程模型创新设计专项赛需要什么编程基础？
+2025-05-17 20:26:21,740 - __main__ - INFO - 测试问题: 参加3D编程模型创新设计专项赛需要什么编程基础？
+2025-05-17 20:26:21,740 - app.models.MCPWithRAG - INFO - 处理问题: 参加3D编程模型创新设计专项赛需要什么编程基础？
+2025-05-17 20:26:21,741 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 3D编程模型创新设计专项赛
+2025-05-17 20:26:21,741 - app.models.SimpleRAG - INFO - 开始搜索: 查询='参加3D编程模型创新设计专项赛需要什么编程基础？', 竞赛类型='None', top_n=5
+2025-05-17 20:26:21,742 - app.models.SimpleRAG - INFO - 检测到竞赛专有名词: 3D编程模型创新设计专项赛
+2025-05-17 20:26:21,742 - app.models.SimpleRAG - INFO - 从查询 '参加3D编程模型创新设计专项赛需要什么编程基础？' 中提取关键词: ['3D编程模型创新设计专项赛', '设计', '模型', '参加', '编程', '创新', '专项', '基础']
+2025-05-17 20:26:21,761 - app.models.SimpleRAG - INFO - 从查询 '参加3D编程模型创新设计专项赛需要什么编程基础？' 中提取关键词: ['3D编程模型创新设计专项赛', '设计', '模型', '参加', '编程', '创新', '专项', '基础']
+2025-05-17 20:26:21,761 - app.models.SimpleRAG - INFO - 基于关键词 ['3D编程模型创新设计专项赛', '设计', '模型', '参加', '编程', '创新', '专项', '基础'] 找到 168 个候选文档
+2025-05-17 20:26:21,768 - app.models.SimpleRAG - INFO - 找到 168 个相关文档，其中 12 个通过阈值 0.24 过滤
+2025-05-17 20:26:21,769 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 22.66, 来源: 02_3D编程模型创新设计专项赛.pdf, 内容开头: 1 
+一、赛事简介 
+为了提升全国青少年科技素养，增强青少年对人工智能的了解，
+加强计算思维和设计能...
+2025-05-17 20:26:21,769 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-17 20:26:21,770 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-17 20:26:29,985 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-17 20:26:30,017 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.81, 评价: 回答质量很高，准确且完整
+2025-05-17 20:26:30,046 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-17 20:26:30,047 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-17 20:26:30,047 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-17 20:26:30,048 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 8.31秒
+2025-05-17 20:26:30,048 - __main__ - INFO - [12/18] 测试: 太空电梯工程设计专项赛中对模型材料有什么要求？
+2025-05-17 20:26:30,048 - __main__ - INFO - 测试问题: 太空电梯工程设计专项赛中对模型材料有什么要求？
+2025-05-17 20:26:30,049 - app.models.MCPWithRAG - INFO - 处理问题: 太空电梯工程设计专项赛中对模型材料有什么要求？
+2025-05-17 20:26:30,049 - app.models.MCPWithRAG - INFO - 检测到竞赛类型: 太空电梯设计专项赛
+2025-05-17 20:26:30,049 - app.models.SimpleRAG - INFO - 开始搜索: 查询='太空电梯设计专项赛 太空电梯工程设计专项赛中对模型材料有什么要求？', 竞赛类型='None', top_n=5
+2025-05-17 20:26:30,051 - app.models.SimpleRAG - INFO - 检测到竞赛专有名词: 太空电梯设计专项赛
+2025-05-17 20:26:30,052 - app.models.SimpleRAG - INFO - 从查询 '太空电梯设计专项赛 太空电梯工程设计专项赛中对模型材料有什么要求？' 中提取关键词: ['太空电梯设计专项赛', '设计', '要求', '模型', '太空', '电梯', '专项', '工程设计', '赛中', '模型材料']
+2025-05-17 20:26:30,052 - app.models.SimpleRAG - INFO - 从查询 '太空电梯设计专项赛 太空电梯工程设计专项赛中对模型材料有什么要求？' 中提取关键词: ['太空电梯设计专项赛', '设计', '要求', '模型', '太空', '电梯', '专项', '工程设计', '赛中', '模型材料']
+2025-05-17 20:26:30,052 - app.models.SimpleRAG - INFO - 基于关键词 ['太空电梯设计专项赛', '设计', '要求', '模型', '太空', '电梯', '专项', '工程设计', '赛中', '模型材料'] 找到 199 个候选文档
+2025-05-17 20:26:30,060 - app.models.SimpleRAG - INFO - 找到 199 个相关文档，其中 12 个通过阈值 0.24 过滤
+2025-05-17 20:26:30,062 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 21.27, 来源: 12_太空电梯工程设计专项赛.pdf, 内容开头: 9 
+电梯搭建高度(电梯最低点到提升装置最
+低点)不得低于75cm，超出部分以cm计算
+，不足1cm...
+2025-05-17 20:26:30,062 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-17 20:26:30,063 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-17 20:26:42,487 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-17 20:26:42,525 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.83, 评价: 回答质量很高，准确且完整
+2025-05-17 20:26:42,558 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-17 20:26:42,558 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-17 20:26:42,559 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-17 20:26:42,559 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 12.51秒
+2025-05-17 20:26:42,559 - __main__ - INFO - [13/18] 测试: 参赛团队可以跨学校组队吗？
+2025-05-17 20:26:42,560 - __main__ - INFO - 测试问题: 参赛团队可以跨学校组队吗？
+2025-05-17 20:26:42,560 - app.models.MCPWithRAG - INFO - 处理问题: 参赛团队可以跨学校组队吗？
+2025-05-17 20:26:42,560 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-17 20:26:42,561 - app.models.SimpleRAG - INFO - 开始搜索: 查询='参赛团队可以跨学校组队吗？', 竞赛类型='None', top_n=5
+2025-05-17 20:26:42,561 - app.models.SimpleRAG - INFO - 从查询 '参赛团队可以跨学校组队吗？' 中提取关键词: ['参赛', '团队', '学校', '组队']
+2025-05-17 20:26:42,561 - app.models.SimpleRAG - INFO - 从查询 '参赛团队可以跨学校组队吗？' 中提取关键词: ['参赛', '团队', '学校', '组队']
+2025-05-17 20:26:42,561 - app.models.SimpleRAG - INFO - 基于关键词 ['参赛', '团队', '学校', '组队'] 找到 56 个候选文档
+2025-05-17 20:26:42,564 - app.models.SimpleRAG - INFO - 找到 56 个相关文档，其中 12 个通过阈值 0.24 过滤
+2025-05-17 20:26:42,564 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 15.43, 来源: 18_智能芯片与计算思维专项赛.pdf, 内容开头:  - 3 - 
+费用；不会以任何方式向学生或组织学生参赛的学校转嫁竞赛活动成本。
+本次挑战赛坚持自愿...
+2025-05-17 20:26:42,564 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-17 20:26:42,565 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-17 20:26:49,149 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-17 20:26:49,178 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.62, 评价: 回答基本符合要求，但可能有改进空间
+2025-05-17 20:26:49,211 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-17 20:26:49,212 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-17 20:26:49,212 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-17 20:26:49,213 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 6.65秒
+2025-05-17 20:26:49,213 - __main__ - INFO - [14/18] 测试: 若竞赛过程中遇到技术问题如何寻求帮助？
+2025-05-17 20:26:49,216 - __main__ - INFO - 测试问题: 若竞赛过程中遇到技术问题如何寻求帮助？
+2025-05-17 20:26:49,216 - app.models.MCPWithRAG - INFO - 处理问题: 若竞赛过程中遇到技术问题如何寻求帮助？
+2025-05-17 20:26:49,216 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-17 20:26:49,217 - app.models.SimpleRAG - INFO - 开始搜索: 查询='若竞赛过程中遇到技术问题如何寻求帮助？', 竞赛类型='None', top_n=5
+2025-05-17 20:26:49,217 - app.models.SimpleRAG - INFO - 从查询 '若竞赛过程中遇到技术问题如何寻求帮助？' 中提取关键词: ['竞赛', '过程', '遇到', '技术', '问题', '寻求', '帮助']
+2025-05-17 20:26:49,218 - app.models.SimpleRAG - INFO - 从查询 '若竞赛过程中遇到技术问题如何寻求帮助？' 中提取关键词: ['竞赛', '过程', '遇到', '技术', '问题', '寻求', '帮助']
+2025-05-17 20:26:49,218 - app.models.SimpleRAG - INFO - 基于关键词 ['竞赛', '过程', '遇到', '技术', '问题', '寻求', '帮助'] 找到 56 个候选文档
+2025-05-17 20:26:49,221 - app.models.SimpleRAG - INFO - 找到 56 个相关文档，其中 12 个通过阈值 0.24 过滤
+2025-05-17 20:26:49,221 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 10.20, 来源: 10_三维程序创意设计专项赛.pdf, 内容开头: 6 
+程序技术
+能力 
+本项目评价作品的编
+程技术使用。要求创
+作者在创作作品时合
+理正确地使用编程...
+2025-05-17 20:26:49,222 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-17 20:26:49,222 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-17 20:26:59,321 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-17 20:26:59,354 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.63, 评价: 回答基本符合要求，但可能有改进空间
+2025-05-17 20:26:59,386 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-17 20:26:59,386 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-17 20:26:59,387 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-17 20:26:59,387 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 10.17秒
+2025-05-17 20:26:59,387 - __main__ - INFO - [15/18] 测试: 比赛前是否有相关培训？
+2025-05-17 20:26:59,388 - __main__ - INFO - 测试问题: 比赛前是否有相关培训？
+2025-05-17 20:26:59,388 - app.models.MCPWithRAG - INFO - 处理问题: 比赛前是否有相关培训？
+2025-05-17 20:26:59,388 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-17 20:26:59,389 - app.models.SimpleRAG - INFO - 开始搜索: 查询='比赛前是否有相关培训？', 竞赛类型='None', top_n=5
+2025-05-17 20:26:59,389 - app.models.SimpleRAG - INFO - 从查询 '比赛前是否有相关培训？' 中提取关键词: ['比赛', '是否', '相关', '培训']
+2025-05-17 20:26:59,390 - app.models.SimpleRAG - INFO - 从查询 '比赛前是否有相关培训？' 中提取关键词: ['比赛', '是否', '相关', '培训']
+2025-05-17 20:26:59,390 - app.models.SimpleRAG - INFO - 基于关键词 ['比赛', '是否', '相关', '培训'] 找到 73 个候选文档
+2025-05-17 20:26:59,394 - app.models.SimpleRAG - INFO - 找到 73 个相关文档，其中 12 个通过阈值 0.24 过滤
+2025-05-17 20:26:59,394 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 7.96, 来源: 08_开源鸿蒙机器人专项赛.pdf, 内容开头: 3 
+控制任务、元宇宙任务组成，比赛结束时，元宇宙任务部分将会在虚拟
+现实场景中展示比赛得分情况。 ...
+2025-05-17 20:26:59,397 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-17 20:26:59,397 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-17 20:27:06,491 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-17 20:27:06,524 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.81, 评价: 回答质量很高，准确且完整
+2025-05-17 20:27:06,556 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-17 20:27:06,557 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-17 20:27:06,557 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-17 20:27:06,557 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 7.17秒
+2025-05-17 20:27:06,557 - __main__ - INFO - [16/18] 测试: 这是一个测试问题
+2025-05-17 20:27:06,558 - __main__ - INFO - 测试问题: 这是一个测试问题
+2025-05-17 20:27:06,558 - app.models.MCPWithRAG - INFO - 处理问题: 这是一个测试问题
+2025-05-17 20:27:06,558 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-17 20:27:06,559 - app.models.SimpleRAG - INFO - 开始搜索: 查询='这是一个测试问题', 竞赛类型='None', top_n=5
+2025-05-17 20:27:06,559 - app.models.SimpleRAG - INFO - 从查询 '这是一个测试问题' 中提取关键词: ['测试', '问题']
+2025-05-17 20:27:06,560 - app.models.SimpleRAG - INFO - 从查询 '这是一个测试问题' 中提取关键词: ['测试', '问题']
+2025-05-17 20:27:06,560 - app.models.SimpleRAG - INFO - 基于关键词 ['测试', '问题'] 找到 9 个候选文档
+2025-05-17 20:27:06,560 - app.models.SimpleRAG - INFO - 找到 9 个相关文档，其中 9 个通过阈值 0.24 过滤
+2025-05-17 20:27:06,561 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 9 个结果，最高得分: 6.40, 来源: 09_人工智能综合创新专项赛.pdf, 内容开头: 12 
+简要地叙述为什么对这个问题进行调查；调查的时间、地点、对象、
+范围、经过及采用的方法等。要求...
+2025-05-17 20:27:06,561 - app.models.MCPWithRAG - INFO - 找到 9 个相关文档
+2025-05-17 20:27:06,561 - app.models.MCPWithContext - INFO - 已添加 9 个文档作为上下文
+2025-05-17 20:27:13,504 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-17 20:27:13,522 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.68, 评价: 回答质量很高，准确且完整
+2025-05-17 20:27:13,540 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-17 20:27:13,541 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-17 20:27:13,541 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-17 20:27:13,541 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 6.98秒
+2025-05-17 20:27:13,542 - __main__ - INFO - [17/18] 测试: 请你谈谈你对人工智能的看法
+2025-05-17 20:27:13,542 - __main__ - INFO - 测试问题: 请你谈谈你对人工智能的看法
+2025-05-17 20:27:13,542 - app.models.MCPWithRAG - INFO - 处理问题: 请你谈谈你对人工智能的看法
+2025-05-17 20:27:13,543 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-17 20:27:13,543 - app.models.SimpleRAG - INFO - 开始搜索: 查询='请你谈谈你对人工智能的看法', 竞赛类型='None', top_n=5
+2025-05-17 20:27:13,544 - app.models.SimpleRAG - INFO - 从查询 '请你谈谈你对人工智能的看法' 中提取关键词: ['谈谈', '人工智能', '看法']
+2025-05-17 20:27:13,544 - app.models.SimpleRAG - INFO - 从查询 '请你谈谈你对人工智能的看法' 中提取关键词: ['谈谈', '人工智能', '看法']
+2025-05-17 20:27:13,544 - app.models.SimpleRAG - INFO - 基于关键词 ['谈谈', '人工智能', '看法'] 找到 52 个候选文档
+2025-05-17 20:27:13,547 - app.models.SimpleRAG - INFO - 找到 52 个相关文档，其中 12 个通过阈值 0.24 过滤
+2025-05-17 20:27:13,547 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 12 个结果，最高得分: 4.05, 来源: 15_虚拟仿真平台创新设计专项赛.pdf, 内容开头: 1 
+一、赛事简介 
+虚拟仿真平台创新设计专项赛利用先进的人工智能算法和图像处理
+技术，模拟真实世界...
+2025-05-17 20:27:13,547 - app.models.MCPWithRAG - INFO - 找到 12 个相关文档
+2025-05-17 20:27:13,547 - app.models.MCPWithContext - INFO - 已添加 12 个文档作为上下文
+2025-05-17 20:27:30,317 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-17 20:27:30,349 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.67, 评价: 回答质量很高，准确且完整
+2025-05-17 20:27:30,379 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-17 20:27:30,379 - app.models.MCPWithRAG - INFO - 计算置信度: 1.00
+2025-05-17 20:27:30,380 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-17 20:27:30,380 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 16.84秒
+2025-05-17 20:27:30,380 - __main__ - INFO - [18/18] 测试: 世界上最高的山峰是什么？
+2025-05-17 20:27:30,380 - __main__ - INFO - 测试问题: 世界上最高的山峰是什么？
+2025-05-17 20:27:30,381 - app.models.MCPWithRAG - INFO - 处理问题: 世界上最高的山峰是什么？
+2025-05-17 20:27:30,381 - app.models.MCPWithRAG - INFO - 未检测到具体竞赛类型
+2025-05-17 20:27:30,381 - app.models.SimpleRAG - INFO - 开始搜索: 查询='世界上最高的山峰是什么？', 竞赛类型='None', top_n=5
+2025-05-17 20:27:30,382 - app.models.SimpleRAG - INFO - 从查询 '世界上最高的山峰是什么？' 中提取关键词: ['世界', '最高', '山峰']
+2025-05-17 20:27:30,382 - app.models.SimpleRAG - INFO - 从查询 '世界上最高的山峰是什么？' 中提取关键词: ['世界', '最高', '山峰']
+2025-05-17 20:27:30,382 - app.models.SimpleRAG - INFO - 基于关键词 ['世界', '最高', '山峰'] 找到 4 个候选文档
+2025-05-17 20:27:30,382 - app.models.SimpleRAG - INFO - 找到 4 个相关文档，其中 4 个通过阈值 0.24 过滤
+2025-05-17 20:27:30,383 - app.models.SimpleRAG - INFO - 搜索结果摘要: 找到 4 个结果，最高得分: 3.92, 来源: 09_人工智能综合创新专项赛.pdf, 内容开头: 12 
+3.参赛队伍由可个人或团队组成，团队人数为2—3人，凡有合作者
+的个人成果或者团队参赛成果，...
+2025-05-17 20:27:30,383 - app.models.MCPWithRAG - INFO - 找到 4 个相关文档
+2025-05-17 20:27:30,383 - app.models.MCPWithContext - INFO - 已添加 4 个文档作为上下文
+2025-05-17 20:27:35,881 - app.models.MCPWithContext - INFO - MCP引擎生成回答成功，置信度: 1.00
+2025-05-17 20:27:35,898 - app.models.MCPWithRAG - INFO - 回答质量评估分数: 0.46, 评价: 回答基本符合要求，但可能有改进空间
+2025-05-17 20:27:35,915 - app.models.MCPWithRAG - WARNING - 检测到回答可能存在编造信息
+2025-05-17 20:27:35,915 - app.models.MCPWithRAG - INFO - 计算置信度: 0.94
+2025-05-17 20:27:35,916 - app.models.MCPWithRAG - INFO - 使用模型生成的回答
+2025-05-17 20:27:35,916 - __main__ - INFO - 问题处理完成，置信度: 0.94, 耗时: 5.53秒
+2025-05-17 20:27:35,919 - __main__ - INFO - 测试结果已保存至: test_results/test_results_20250517_202735.json
+2025-05-17 20:27:35,919 - __main__ - INFO - 
+====== 测试分析报告 ======
+2025-05-17 20:27:35,920 - __main__ - INFO - 测试问题总数: 18
+2025-05-17 20:27:35,920 - __main__ - INFO - 成功处理数: 18
+2025-05-17 20:27:35,920 - __main__ - INFO - 成功率: 100.0%
+2025-05-17 20:27:35,921 - __main__ - INFO - 平均置信度: 1.00
+2025-05-17 20:27:35,921 - __main__ - INFO - 平均处理时间: 11.81秒
+2025-05-17 20:27:35,921 - __main__ - INFO - 
+置信度分布:
+2025-05-17 20:27:35,922 - __main__ - INFO -   高 (>0.7): 18 个问题 (100.0%)
+2025-05-17 20:27:35,922 - __main__ - INFO -   中 (0.4-0.7): 0 个问题 (0.0%)
+2025-05-17 20:27:35,922 - __main__ - INFO -   低 (0.2-0.4): 0 个问题 (0.0%)
+2025-05-17 20:27:35,922 - __main__ - INFO -   极低 (<0.2): 0 个问题 (0.0%)
+2025-05-17 20:27:35,923 - __main__ - INFO - 
+测试完成！
+2025-05-18 19:12:25,724 - __main__ - INFO - 开始批量测试...
+2025-05-18 19:12:26,579 - config - INFO - 系统配置已加载: 竞赛智能客服系统 v5.0.0
+2025-05-18 19:12:26,579 - config - INFO - API服务: 0.0.0.0:53085
+2025-05-18 19:12:26,579 - config - INFO - 知识库路径: d:/teddy-cup/data/knowledge/docs/附件1/
+2025-05-18 19:12:26,579 - config - INFO - TXT路径: d:/teddy-cup/data/knowledge/txt
+2025-05-18 19:12:26,580 - config - INFO - 日志级别: INFO
+2025-05-18 19:12:26,580 - config - INFO - RAG状态: 已启用
+2025-05-18 19:12:26,580 - config - INFO - 支持的竞赛数量: 16
+2025-05-18 19:12:27,133 - __main__ - ERROR - 测试过程中发生错误: No module named 'app.models.MCPWithRAG'
+2025-05-18 19:12:27,134 - __main__ - ERROR - Traceback (most recent call last):
+  File "d:\teddy-cup\test_all_questions.py", line 99, in run_tests
+    from app.models.MCPWithRAG import MCPWithRAG
+ModuleNotFoundError: No module named 'app.models.MCPWithRAG'
+
+2025-05-18 19:12:27,137 - __main__ - INFO - 测试结果已保存至: test_results/test_results_20250518_191227.json
+2025-05-18 19:12:27,137 - __main__ - INFO - 
+====== 测试分析报告 ======
+2025-05-18 19:12:27,138 - __main__ - ERROR - 测试过程中发生错误: 'total_questions'
+2025-05-18 19:12:27,140 - __main__ - ERROR - Traceback (most recent call last):
+  File "d:\teddy-cup\test_all_questions.py", line 189, in main
+    logger.info(f"测试问题总数: {analysis['total_questions']}")
+                                 ~~~~~~~~^^^^^^^^^^^^^^^^^^^
+KeyError: 'total_questions'
+
+2025-05-18 19:15:26,384 - __main__ - INFO - 开始批量测试...
+2025-05-18 19:15:27,214 - config - INFO - 系统配置已加载: 竞赛智能客服系统 v5.0.0
+2025-05-18 19:15:27,214 - config - INFO - API服务: 0.0.0.0:53085
+2025-05-18 19:15:27,215 - config - INFO - 知识库路径: D:/teddy-cup/data/knowledge/docs/附件1/
+2025-05-18 19:15:27,215 - config - INFO - TXT路径: D:/teddy-cup/data/knowledge/txt
+2025-05-18 19:15:27,215 - config - INFO - 日志级别: INFO
+2025-05-18 19:15:27,215 - config - INFO - RAG状态: 已启用
+2025-05-18 19:15:27,215 - config - INFO - 支持的竞赛数量: 16
+2025-05-18 19:15:27,817 - __main__ - INFO - 初始化SimpleMCPWithRAG引擎...
+2025-05-18 19:15:28,132 - app.models.MCPWithContext - INFO - MCP引擎初始化完成，使用模型: qwen-max
+2025-05-18 19:15:28,134 - app.models.SimpleRAG - INFO - 成功加载 334 个停用词
+2025-05-18 19:15:28,139 - app.models.SimpleRAG - INFO - 成功加载索引，包含 296 个文档，2221 个关键词
+2025-05-18 19:15:28,140 - app.models.SimpleRAG - INFO - 简化版RAG引擎初始化完成，索引包含 296 个文档片段，阈值设置为 0.03
+2025-05-18 19:15:28,140 - app.models.SimpleMCPWithRAG - INFO - 极简化版MCP+RAG引擎初始化完成
+2025-05-18 19:15:28,140 - __main__ - INFO - 开始测试 18 个问题...
+2025-05-18 19:15:28,140 - __main__ - INFO - [1/18] 测试: 泰迪杯数据挖掘挑战赛是什么比赛？
+2025-05-18 19:15:28,140 - __main__ - INFO - 测试问题: 泰迪杯数据挖掘挑战赛是什么比赛？
+2025-05-18 19:15:28,141 - app.models.SimpleMCPWithRAG - INFO - SimpleMCPWithRAG接收问题: 泰迪杯数据挖掘挑战赛是什么比赛？
+2025-05-18 19:15:28,141 - jieba - DEBUG - Building prefix dict from the default dictionary ...
+2025-05-18 19:15:28,142 - jieba - DEBUG - Loading model from cache C:\Users\LEGION\AppData\Local\Temp\jieba.cache
+2025-05-18 19:15:28,990 - jieba - DEBUG - Loading model cost 0.850 seconds.
+2025-05-18 19:15:28,991 - jieba - DEBUG - Prefix dict has been built successfully.
+2025-05-18 19:15:28,992 - app.models.SimpleRAG - INFO - 从查询 '泰迪杯数据挖掘挑战赛是什么比赛？' 中提取关键词: ['泰迪杯', '数据挖掘', '挑战赛', '比赛']
+2025-05-18 19:15:28,992 - app.models.SimpleRAG - INFO - 提取的关键词: ['泰迪杯', '数据挖掘', '挑战赛', '比赛']
+2025-05-18 19:15:28,999 - app.models.SimpleRAG - INFO - 找到137个相似度大于阈值(0.01)的文档
+2025-05-18 19:15:28,999 - app.models.SimpleRAG - INFO - 最终返回10个相关文档
+2025-05-18 19:15:29,000 - app.models.SimpleMCPWithRAG - INFO - 检索到10个相关文档
+2025-05-18 19:15:29,000 - app.models.MCPWithContext - INFO - MCP处理问题: '泰迪杯数据挖掘挑战赛是什么比赛？'
+2025-05-18 19:15:29,001 - app.models.mcp_engine - INFO - 调用模型 qwen-max 生成回答
+2025-05-18 19:15:33,843 - app.models.mcp_engine - INFO - 模型生成回答成功，长度: 176
+2025-05-18 19:15:33,843 - app.models.MCPWithContext - INFO - MCP生成回答完成，字数: 176, 是否有答案: True
+2025-05-18 19:15:33,844 - app.models.SimpleMCPWithRAG - INFO - MCP返回响应类型: <class 'dict'>
+2025-05-18 19:15:33,844 - app.models.SimpleMCPWithRAG - INFO - 从字典提取答案和置信度: “泰迪杯”数据挖掘挑战赛是面向全国在校研究生和大学生的群众性..., 1.0
+2025-05-18 19:15:33,844 - app.models.SimpleMCPWithRAG - INFO - 返回成功响应，处理时间: 5.70秒
+2025-05-18 19:15:33,844 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 5.70秒
+2025-05-18 19:15:33,845 - __main__ - INFO - [2/18] 测试: 3D编程模型创新设计专项赛的参赛要求是什么？
+2025-05-18 19:15:33,845 - __main__ - INFO - 测试问题: 3D编程模型创新设计专项赛的参赛要求是什么？
+2025-05-18 19:15:33,845 - app.models.SimpleMCPWithRAG - INFO - SimpleMCPWithRAG接收问题: 3D编程模型创新设计专项赛的参赛要求是什么？
+2025-05-18 19:15:33,846 - app.models.SimpleRAG - INFO - 检测到竞赛专有名词: 3D编程模型创新设计专项赛
+2025-05-18 19:15:33,847 - app.models.SimpleRAG - INFO - 从查询 '3D编程模型创新设计专项赛的参赛要求是什么？' 中提取关键词: ['3D编程模型创新设计专项赛', '要求', '设计', '参赛要求', '模型', '编程', '创新', '专项', '参赛']
+2025-05-18 19:15:33,847 - app.models.SimpleRAG - INFO - 提取的关键词: ['3D编程模型创新设计专项赛', '要求', '设计', '参赛要求', '模型', '编程', '创新', '专项', '参赛']
+2025-05-18 19:15:33,848 - app.models.SimpleRAG - INFO - 找到10个与竞赛类型'3D编程模型创新设计专项赛'相关的文档
+2025-05-18 19:15:33,860 - app.models.SimpleRAG - INFO - 找到238个相似度大于阈值(0.01)的文档
+2025-05-18 19:15:33,860 - app.models.SimpleRAG - INFO - 最终返回10个相关文档
+2025-05-18 19:15:33,861 - app.models.SimpleMCPWithRAG - INFO - 检索到10个相关文档
+2025-05-18 19:15:33,861 - app.models.MCPWithContext - INFO - MCP处理问题: '3D编程模型创新设计专项赛的参赛要求是什么？'
+2025-05-18 19:15:33,861 - app.models.mcp_engine - INFO - 调用模型 qwen-max 生成回答
+2025-05-18 19:15:39,604 - app.models.mcp_engine - INFO - 模型生成回答成功，长度: 199
+2025-05-18 19:15:39,604 - app.models.MCPWithContext - INFO - MCP生成回答完成，字数: 199, 是否有答案: True
+2025-05-18 19:15:39,604 - app.models.SimpleMCPWithRAG - INFO - MCP返回响应类型: <class 'dict'>
+2025-05-18 19:15:39,605 - app.models.SimpleMCPWithRAG - INFO - 从字典提取答案和置信度: 3D编程模型创新设计专项赛的参赛要求如下：
+
+1. 在校小学..., 1.0
+2025-05-18 19:15:39,605 - app.models.SimpleMCPWithRAG - INFO - 返回成功响应，处理时间: 5.76秒
+2025-05-18 19:15:39,605 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 5.76秒
+2025-05-18 19:15:39,606 - __main__ - INFO - [3/18] 测试: 机器人工程设计专项赛需要提交哪些材料？
+2025-05-18 19:15:39,606 - __main__ - INFO - 测试问题: 机器人工程设计专项赛需要提交哪些材料？
+2025-05-18 19:15:39,606 - app.models.SimpleMCPWithRAG - INFO - SimpleMCPWithRAG接收问题: 机器人工程设计专项赛需要提交哪些材料？
+2025-05-18 19:15:39,607 - app.models.SimpleRAG - INFO - 从查询 '机器人工程设计专项赛需要提交哪些材料？' 中提取关键词: ['设计', '机器人', '工程设计', '专项', '提交', '材料']
+2025-05-18 19:15:39,607 - app.models.SimpleRAG - INFO - 提取的关键词: ['设计', '机器人', '工程设计', '专项', '提交', '材料']
+2025-05-18 19:15:39,607 - app.models.SimpleRAG - INFO - 检测到竞赛类型: 机器人工程挑战赛
+2025-05-18 19:15:39,607 - app.models.SimpleRAG - INFO - 找到40个与竞赛类型'机器人工程挑战赛'相关的文档
+2025-05-18 19:15:39,616 - app.models.SimpleRAG - INFO - 找到214个相似度大于阈值(0.01)的文档
+2025-05-18 19:15:39,616 - app.models.SimpleRAG - INFO - 最终返回10个相关文档
+2025-05-18 19:15:39,617 - app.models.SimpleMCPWithRAG - INFO - 检索到10个相关文档
+2025-05-18 19:15:39,617 - app.models.MCPWithContext - INFO - MCP处理问题: '机器人工程设计专项赛需要提交哪些材料？'
+2025-05-18 19:15:39,617 - app.models.mcp_engine - INFO - 调用模型 qwen-max 生成回答
+2025-05-18 19:15:46,753 - app.models.mcp_engine - INFO - 模型生成回答成功，长度: 258
+2025-05-18 19:15:46,753 - app.models.MCPWithContext - INFO - MCP生成回答完成，字数: 258, 是否有答案: True
+2025-05-18 19:15:46,753 - app.models.SimpleMCPWithRAG - INFO - MCP返回响应类型: <class 'dict'>
+2025-05-18 19:15:46,754 - app.models.SimpleMCPWithRAG - INFO - 从字典提取答案和置信度: 根据提供的上下文信息，机器人工程设计专项赛需要提交的材料主要..., 1.0
+2025-05-18 19:15:46,754 - app.models.SimpleMCPWithRAG - INFO - 返回成功响应，处理时间: 7.15秒
+2025-05-18 19:15:46,754 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 7.15秒
+2025-05-18 19:15:46,754 - __main__ - INFO - [4/18] 测试: 太空电梯工程设计专项赛的评分标准是什么？
+2025-05-18 19:15:46,755 - __main__ - INFO - 测试问题: 太空电梯工程设计专项赛的评分标准是什么？
+2025-05-18 19:15:46,755 - app.models.SimpleMCPWithRAG - INFO - SimpleMCPWithRAG接收问题: 太空电梯工程设计专项赛的评分标准是什么？
+2025-05-18 19:15:46,756 - app.models.SimpleRAG - INFO - 从查询 '太空电梯工程设计专项赛的评分标准是什么？' 中提取关键词: ['评分标准', '设计', '太空', '电梯', '工程设计', '专项']
+2025-05-18 19:15:46,756 - app.models.SimpleRAG - INFO - 提取的关键词: ['评分标准', '设计', '太空', '电梯', '工程设计', '专项']
+2025-05-18 19:15:46,756 - app.models.SimpleRAG - INFO - 检测到竞赛类型: 太空电梯设计专项赛
+2025-05-18 19:15:46,756 - app.models.SimpleRAG - INFO - 找到16个与竞赛类型'太空电梯设计专项赛'相关的文档
+2025-05-18 19:15:46,763 - app.models.SimpleRAG - INFO - 找到124个相似度大于阈值(0.01)的文档
+2025-05-18 19:15:46,763 - app.models.SimpleRAG - INFO - 最终返回10个相关文档
+2025-05-18 19:15:46,763 - app.models.SimpleMCPWithRAG - INFO - 检索到10个相关文档
+2025-05-18 19:15:46,763 - app.models.MCPWithContext - INFO - MCP处理问题: '太空电梯工程设计专项赛的评分标准是什么？'
+2025-05-18 19:15:46,764 - app.models.mcp_engine - INFO - 调用模型 qwen-max 生成回答
+2025-05-18 19:15:57,590 - app.models.mcp_engine - INFO - 模型生成回答成功，长度: 391
+2025-05-18 19:15:57,591 - app.models.MCPWithContext - INFO - MCP生成回答完成，字数: 391, 是否有答案: True
+2025-05-18 19:15:57,591 - app.models.SimpleMCPWithRAG - INFO - MCP返回响应类型: <class 'dict'>
+2025-05-18 19:15:57,592 - app.models.SimpleMCPWithRAG - INFO - 从字典提取答案和置信度: 太空电梯工程设计专项赛的评分标准包括以下几个方面：
+
+1. ..., 1.0
+2025-05-18 19:15:57,592 - app.models.SimpleMCPWithRAG - INFO - 返回成功响应，处理时间: 10.84秒
+2025-05-18 19:15:57,592 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 10.84秒
+2025-05-18 19:15:57,592 - __main__ - INFO - [5/18] 测试: 虚拟仿真平台创新设计专项赛的参赛对象有哪些？
+2025-05-18 19:15:57,593 - __main__ - INFO - 测试问题: 虚拟仿真平台创新设计专项赛的参赛对象有哪些？
+2025-05-18 19:15:57,593 - app.models.SimpleMCPWithRAG - INFO - SimpleMCPWithRAG接收问题: 虚拟仿真平台创新设计专项赛的参赛对象有哪些？
+2025-05-18 19:15:57,594 - app.models.SimpleRAG - INFO - 检测到竞赛专有名词: 虚拟仿真平台创新设计专项赛
+2025-05-18 19:15:57,594 - app.models.SimpleRAG - INFO - 从查询 '虚拟仿真平台创新设计专项赛的参赛对象有哪些？' 中提取关键词: ['虚拟仿真平台创新设计专项赛', '设计', '虚拟', '平台', '创新', '专项', '参赛', '对象']
+2025-05-18 19:15:57,594 - app.models.SimpleRAG - INFO - 提取的关键词: ['虚拟仿真平台创新设计专项赛', '设计', '虚拟', '平台', '创新', '专项', '参赛', '对象']
+2025-05-18 19:15:57,595 - app.models.SimpleRAG - INFO - 找到20个与竞赛类型'虚拟仿真平台创新设计专项赛'相关的文档
+2025-05-18 19:15:57,603 - app.models.SimpleRAG - INFO - 找到187个相似度大于阈值(0.01)的文档
+2025-05-18 19:15:57,603 - app.models.SimpleRAG - INFO - 最终返回10个相关文档
+2025-05-18 19:15:57,603 - app.models.SimpleMCPWithRAG - INFO - 检索到10个相关文档
+2025-05-18 19:15:57,604 - app.models.MCPWithContext - INFO - MCP处理问题: '虚拟仿真平台创新设计专项赛的参赛对象有哪些？'
+2025-05-18 19:15:57,604 - app.models.mcp_engine - INFO - 调用模型 qwen-max 生成回答
+2025-05-18 19:16:01,280 - app.models.mcp_engine - INFO - 模型生成回答成功，长度: 83
+2025-05-18 19:16:01,280 - app.models.MCPWithContext - INFO - MCP生成回答完成，字数: 83, 是否有答案: True
+2025-05-18 19:16:01,280 - app.models.SimpleMCPWithRAG - INFO - MCP返回响应类型: <class 'dict'>
+2025-05-18 19:16:01,280 - app.models.SimpleMCPWithRAG - INFO - 从字典提取答案和置信度: 虚拟仿真平台创新设计专项赛的参赛对象是在校的小学、初中、高中..., 1.0
+2025-05-18 19:16:01,281 - app.models.SimpleMCPWithRAG - INFO - 返回成功响应，处理时间: 3.69秒
+2025-05-18 19:16:01,281 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 3.69秒
+2025-05-18 19:16:01,281 - __main__ - INFO - [6/18] 测试: 开源鸿蒙机器人专项赛的比赛流程是怎样的？
+2025-05-18 19:16:01,281 - __main__ - INFO - 测试问题: 开源鸿蒙机器人专项赛的比赛流程是怎样的？
+2025-05-18 19:16:01,281 - app.models.SimpleMCPWithRAG - INFO - SimpleMCPWithRAG接收问题: 开源鸿蒙机器人专项赛的比赛流程是怎样的？
+2025-05-18 19:16:01,283 - app.models.SimpleRAG - INFO - 从查询 '开源鸿蒙机器人专项赛的比赛流程是怎样的？' 中提取关键词: ['开源', '鸿蒙', '机器人', '专项', '比赛', '流程']
+2025-05-18 19:16:01,283 - app.models.SimpleRAG - INFO - 提取的关键词: ['开源', '鸿蒙', '机器人', '专项', '比赛', '流程']
+2025-05-18 19:16:01,283 - app.models.SimpleRAG - INFO - 检测到竞赛类型: 开源鸿蒙专项赛
+2025-05-18 19:16:01,283 - app.models.SimpleRAG - INFO - 找到17个与竞赛类型'开源鸿蒙专项赛'相关的文档
+2025-05-18 19:16:01,291 - app.models.SimpleRAG - INFO - 找到168个相似度大于阈值(0.01)的文档
+2025-05-18 19:16:01,291 - app.models.SimpleRAG - INFO - 最终返回10个相关文档
+2025-05-18 19:16:01,292 - app.models.SimpleMCPWithRAG - INFO - 检索到10个相关文档
+2025-05-18 19:16:01,292 - app.models.MCPWithContext - INFO - MCP处理问题: '开源鸿蒙机器人专项赛的比赛流程是怎样的？'
+2025-05-18 19:16:01,292 - app.models.mcp_engine - INFO - 调用模型 qwen-max 生成回答
+2025-05-18 19:16:15,079 - app.models.mcp_engine - INFO - 模型生成回答成功，长度: 524
+2025-05-18 19:16:15,079 - app.models.MCPWithContext - INFO - MCP生成回答完成，字数: 524, 是否有答案: True
+2025-05-18 19:16:15,079 - app.models.SimpleMCPWithRAG - INFO - MCP返回响应类型: <class 'dict'>
+2025-05-18 19:16:15,080 - app.models.SimpleMCPWithRAG - INFO - 从字典提取答案和置信度: 开源鸿蒙机器人专项赛的比赛流程如下：
+
+1. **报名阶段*..., 1.0
+2025-05-18 19:16:15,080 - app.models.SimpleMCPWithRAG - INFO - 返回成功响应，处理时间: 13.80秒
+2025-05-18 19:16:15,080 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 13.80秒
+2025-05-18 19:16:15,080 - __main__ - INFO - [7/18] 测试: 所有竞赛的报名方式是什么？
+2025-05-18 19:16:15,080 - __main__ - INFO - 测试问题: 所有竞赛的报名方式是什么？
+2025-05-18 19:16:15,081 - app.models.SimpleMCPWithRAG - INFO - SimpleMCPWithRAG接收问题: 所有竞赛的报名方式是什么？
+2025-05-18 19:16:15,081 - app.models.SimpleRAG - INFO - 从查询 '所有竞赛的报名方式是什么？' 中提取关键词: ['报名', '报名方式', '竞赛', '方式']
+2025-05-18 19:16:15,081 - app.models.SimpleRAG - INFO - 提取的关键词: ['报名', '报名方式', '竞赛', '方式']
+2025-05-18 19:16:15,085 - app.models.SimpleRAG - INFO - 找到105个相似度大于阈值(0.01)的文档
+2025-05-18 19:16:15,086 - app.models.SimpleRAG - INFO - 最终返回10个相关文档
+2025-05-18 19:16:15,086 - app.models.SimpleMCPWithRAG - INFO - 检索到10个相关文档
+2025-05-18 19:16:15,087 - app.models.MCPWithContext - INFO - MCP处理问题: '所有竞赛的报名方式是什么？'
+2025-05-18 19:16:15,087 - app.models.mcp_engine - INFO - 调用模型 qwen-max 生成回答
+2025-05-18 19:16:30,132 - app.models.mcp_engine - INFO - 模型生成回答成功，长度: 754
+2025-05-18 19:16:30,133 - app.models.MCPWithContext - INFO - MCP生成回答完成，字数: 754, 是否有答案: True
+2025-05-18 19:16:30,133 - app.models.SimpleMCPWithRAG - INFO - MCP返回响应类型: <class 'dict'>
+2025-05-18 19:16:30,133 - app.models.SimpleMCPWithRAG - INFO - 从字典提取答案和置信度: 根据提供的信息，各竞赛项目的报名方式如下：
+
+1. **编程..., 1.0
+2025-05-18 19:16:30,134 - app.models.SimpleMCPWithRAG - INFO - 返回成功响应，处理时间: 15.05秒
+2025-05-18 19:16:30,134 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 15.05秒
+2025-05-18 19:16:30,134 - __main__ - INFO - [8/18] 测试: 竞赛作品提交的截止日期是什么时候？
+2025-05-18 19:16:30,134 - __main__ - INFO - 测试问题: 竞赛作品提交的截止日期是什么时候？
+2025-05-18 19:16:30,134 - app.models.SimpleMCPWithRAG - INFO - SimpleMCPWithRAG接收问题: 竞赛作品提交的截止日期是什么时候？
+2025-05-18 19:16:30,135 - app.models.SimpleRAG - INFO - 从查询 '竞赛作品提交的截止日期是什么时候？' 中提取关键词: ['作品提交', '竞赛', '作品', '提交', '截止', '时候']
+2025-05-18 19:16:30,135 - app.models.SimpleRAG - INFO - 提取的关键词: ['作品提交', '竞赛', '作品', '提交', '截止', '时候']
+2025-05-18 19:16:30,142 - app.models.SimpleRAG - INFO - 找到107个相似度大于阈值(0.01)的文档
+2025-05-18 19:16:30,142 - app.models.SimpleRAG - INFO - 最终返回10个相关文档
+2025-05-18 19:16:30,143 - app.models.SimpleMCPWithRAG - INFO - 检索到10个相关文档
+2025-05-18 19:16:30,143 - app.models.MCPWithContext - INFO - MCP处理问题: '竞赛作品提交的截止日期是什么时候？'
+2025-05-18 19:16:30,144 - app.models.mcp_engine - INFO - 调用模型 qwen-max 生成回答
+2025-05-18 19:16:36,201 - app.models.mcp_engine - INFO - 模型生成回答成功，长度: 163
+2025-05-18 19:16:36,201 - app.models.MCPWithContext - INFO - MCP生成回答完成，字数: 163, 是否有答案: True
+2025-05-18 19:16:36,201 - app.models.SimpleMCPWithRAG - INFO - MCP返回响应类型: <class 'dict'>
+2025-05-18 19:16:36,201 - app.models.SimpleMCPWithRAG - INFO - 从字典提取答案和置信度: 不同的竞赛有不同的作品提交截止日期。根据提供的信息，"泰迪杯..., 1.0
+2025-05-18 19:16:36,202 - app.models.SimpleMCPWithRAG - INFO - 返回成功响应，处理时间: 6.07秒
+2025-05-18 19:16:36,202 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 6.07秒
+2025-05-18 19:16:36,202 - __main__ - INFO - [9/18] 测试: 参赛获奖证书如何颁发？
+2025-05-18 19:16:36,202 - __main__ - INFO - 测试问题: 参赛获奖证书如何颁发？
+2025-05-18 19:16:36,203 - app.models.SimpleMCPWithRAG - INFO - SimpleMCPWithRAG接收问题: 参赛获奖证书如何颁发？
+2025-05-18 19:16:36,203 - app.models.SimpleRAG - INFO - 从查询 '参赛获奖证书如何颁发？' 中提取关键词: ['参赛', '获奖', '证书', '颁发']
+2025-05-18 19:16:36,203 - app.models.SimpleRAG - INFO - 提取的关键词: ['参赛', '获奖', '证书', '颁发']
+2025-05-18 19:16:36,209 - app.models.SimpleRAG - INFO - 找到101个相似度大于阈值(0.01)的文档
+2025-05-18 19:16:36,209 - app.models.SimpleRAG - INFO - 最终返回10个相关文档
+2025-05-18 19:16:36,209 - app.models.SimpleMCPWithRAG - INFO - 检索到10个相关文档
+2025-05-18 19:16:36,210 - app.models.MCPWithContext - INFO - MCP处理问题: '参赛获奖证书如何颁发？'
+2025-05-18 19:16:36,210 - app.models.mcp_engine - INFO - 调用模型 qwen-max 生成回答
+2025-05-18 19:16:44,441 - app.models.mcp_engine - INFO - 模型生成回答成功，长度: 180
+2025-05-18 19:16:44,441 - app.models.MCPWithContext - INFO - MCP生成回答完成，字数: 180, 是否有答案: True
+2025-05-18 19:16:44,441 - app.models.SimpleMCPWithRAG - INFO - MCP返回响应类型: <class 'dict'>
+2025-05-18 19:16:44,441 - app.models.SimpleMCPWithRAG - INFO - 从字典提取答案和置信度: 根据2024年（第12届）“泰迪杯”数据挖掘挑战赛的竞赛通知..., 1.0
+2025-05-18 19:16:44,442 - app.models.SimpleMCPWithRAG - INFO - 返回成功响应，处理时间: 8.24秒
+2025-05-18 19:16:44,442 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 8.24秒
+2025-05-18 19:16:44,442 - __main__ - INFO - [10/18] 测试: 如何确保我的竞赛作品不被剽窃？
+2025-05-18 19:16:44,442 - __main__ - INFO - 测试问题: 如何确保我的竞赛作品不被剽窃？
+2025-05-18 19:16:44,442 - app.models.SimpleMCPWithRAG - INFO - SimpleMCPWithRAG接收问题: 如何确保我的竞赛作品不被剽窃？
+2025-05-18 19:16:44,444 - app.models.SimpleRAG - INFO - 从查询 '如何确保我的竞赛作品不被剽窃？' 中提取关键词: ['确保', '竞赛', '作品', '剽窃']
+2025-05-18 19:16:44,444 - app.models.SimpleRAG - INFO - 提取的关键词: ['确保', '竞赛', '作品', '剽窃']
+2025-05-18 19:16:44,450 - app.models.SimpleRAG - INFO - 找到101个相似度大于阈值(0.01)的文档
+2025-05-18 19:16:44,451 - app.models.SimpleRAG - INFO - 最终返回10个相关文档
+2025-05-18 19:16:44,451 - app.models.SimpleMCPWithRAG - INFO - 检索到10个相关文档
+2025-05-18 19:16:44,452 - app.models.MCPWithContext - INFO - MCP处理问题: '如何确保我的竞赛作品不被剽窃？'
+2025-05-18 19:16:44,452 - app.models.mcp_engine - INFO - 调用模型 qwen-max 生成回答
+2025-05-18 19:16:49,993 - app.models.mcp_engine - INFO - 模型生成回答成功，长度: 212
+2025-05-18 19:16:49,994 - app.models.MCPWithContext - INFO - MCP生成回答完成，字数: 212, 是否有答案: True
+2025-05-18 19:16:49,994 - app.models.SimpleMCPWithRAG - INFO - MCP返回响应类型: <class 'dict'>
+2025-05-18 19:16:49,994 - app.models.SimpleMCPWithRAG - INFO - 从字典提取答案和置信度: 根据提供的上下文信息，确保您的竞赛作品不被剽窃的方法包括：
+..., 1.0
+2025-05-18 19:16:49,995 - app.models.SimpleMCPWithRAG - INFO - 返回成功响应，处理时间: 5.55秒
+2025-05-18 19:16:49,995 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 5.55秒
+2025-05-18 19:16:49,995 - __main__ - INFO - [11/18] 测试: 参加3D编程模型创新设计专项赛需要什么编程基础？
+2025-05-18 19:16:49,995 - __main__ - INFO - 测试问题: 参加3D编程模型创新设计专项赛需要什么编程基础？
+2025-05-18 19:16:49,996 - app.models.SimpleMCPWithRAG - INFO - SimpleMCPWithRAG接收问题: 参加3D编程模型创新设计专项赛需要什么编程基础？
+2025-05-18 19:16:49,996 - app.models.SimpleRAG - INFO - 检测到竞赛专有名词: 3D编程模型创新设计专项赛
+2025-05-18 19:16:49,996 - app.models.SimpleRAG - INFO - 从查询 '参加3D编程模型创新设计专项赛需要什么编程基础？' 中提取关键词: ['3D编程模型创新设计专项赛', '设计', '模型', '参加', '编程', '创新', '专项', '基础']
+2025-05-18 19:16:49,997 - app.models.SimpleRAG - INFO - 提取的关键词: ['3D编程模型创新设计专项赛', '设计', '模型', '参加', '编程', '创新', '专项', '基础']
+2025-05-18 19:16:49,997 - app.models.SimpleRAG - INFO - 找到10个与竞赛类型'3D编程模型创新设计专项赛'相关的文档
+2025-05-18 19:16:50,007 - app.models.SimpleRAG - INFO - 找到188个相似度大于阈值(0.01)的文档
+2025-05-18 19:16:50,008 - app.models.SimpleRAG - INFO - 最终返回10个相关文档
+2025-05-18 19:16:50,008 - app.models.SimpleMCPWithRAG - INFO - 检索到10个相关文档
+2025-05-18 19:16:50,008 - app.models.MCPWithContext - INFO - MCP处理问题: '参加3D编程模型创新设计专项赛需要什么编程基础？'
+2025-05-18 19:16:50,008 - app.models.mcp_engine - INFO - 调用模型 qwen-max 生成回答
+2025-05-18 19:16:56,110 - app.models.mcp_engine - INFO - 模型生成回答成功，长度: 232
+2025-05-18 19:16:56,111 - app.models.MCPWithContext - INFO - MCP生成回答完成，字数: 232, 是否有答案: True
+2025-05-18 19:16:56,111 - app.models.SimpleMCPWithRAG - INFO - MCP返回响应类型: <class 'dict'>
+2025-05-18 19:16:56,111 - app.models.SimpleMCPWithRAG - INFO - 从字典提取答案和置信度: 参加3D编程模型创新设计专项赛，需要选手具备一定的编程基础，..., 1.0
+2025-05-18 19:16:56,111 - app.models.SimpleMCPWithRAG - INFO - 返回成功响应，处理时间: 6.11秒
+2025-05-18 19:16:56,112 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 6.12秒
+2025-05-18 19:16:56,112 - __main__ - INFO - [12/18] 测试: 太空电梯工程设计专项赛中对模型材料有什么要求？
+2025-05-18 19:16:56,112 - __main__ - INFO - 测试问题: 太空电梯工程设计专项赛中对模型材料有什么要求？
+2025-05-18 19:16:56,112 - app.models.SimpleMCPWithRAG - INFO - SimpleMCPWithRAG接收问题: 太空电梯工程设计专项赛中对模型材料有什么要求？
+2025-05-18 19:16:56,115 - app.models.SimpleRAG - INFO - 从查询 '太空电梯工程设计专项赛中对模型材料有什么要求？' 中提取关键词: ['要求', '设计', '模型', '太空', '电梯', '工程设计', '专项', '赛中', '模型材料']
+2025-05-18 19:16:56,116 - app.models.SimpleRAG - INFO - 提取的关键词: ['要求', '设计', '模型', '太空', '电梯', '工程设计', '专项', '赛中', '模型材料']
+2025-05-18 19:16:56,116 - app.models.SimpleRAG - INFO - 检测到竞赛类型: 太空电梯设计专项赛
+2025-05-18 19:16:56,116 - app.models.SimpleRAG - INFO - 找到16个与竞赛类型'太空电梯设计专项赛'相关的文档
+2025-05-18 19:16:56,130 - app.models.SimpleRAG - INFO - 找到203个相似度大于阈值(0.01)的文档
+2025-05-18 19:16:56,130 - app.models.SimpleRAG - INFO - 最终返回10个相关文档
+2025-05-18 19:16:56,130 - app.models.SimpleMCPWithRAG - INFO - 检索到10个相关文档
+2025-05-18 19:16:56,131 - app.models.MCPWithContext - INFO - MCP处理问题: '太空电梯工程设计专项赛中对模型材料有什么要求？'
+2025-05-18 19:16:56,131 - app.models.mcp_engine - INFO - 调用模型 qwen-max 生成回答
+2025-05-18 19:17:03,233 - app.models.mcp_engine - INFO - 模型生成回答成功，长度: 201
+2025-05-18 19:17:03,233 - app.models.MCPWithContext - INFO - MCP生成回答完成，字数: 201, 是否有答案: True
+2025-05-18 19:17:03,233 - app.models.SimpleMCPWithRAG - INFO - MCP返回响应类型: <class 'dict'>
+2025-05-18 19:17:03,234 - app.models.SimpleMCPWithRAG - INFO - 从字典提取答案和置信度: 在太空电梯工程设计专项赛中，对于模型材料的要求包括：
+
+- ..., 1.0
+2025-05-18 19:17:03,234 - app.models.SimpleMCPWithRAG - INFO - 返回成功响应，处理时间: 7.12秒
+2025-05-18 19:17:03,234 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 7.12秒
+2025-05-18 19:17:03,235 - __main__ - INFO - [13/18] 测试: 参赛团队可以跨学校组队吗？
+2025-05-18 19:17:03,235 - __main__ - INFO - 测试问题: 参赛团队可以跨学校组队吗？
+2025-05-18 19:17:03,235 - app.models.SimpleMCPWithRAG - INFO - SimpleMCPWithRAG接收问题: 参赛团队可以跨学校组队吗？
+2025-05-18 19:17:03,236 - app.models.SimpleRAG - INFO - 从查询 '参赛团队可以跨学校组队吗？' 中提取关键词: ['参赛', '团队', '学校', '组队']
+2025-05-18 19:17:03,236 - app.models.SimpleRAG - INFO - 提取的关键词: ['参赛', '团队', '学校', '组队']
+2025-05-18 19:17:03,241 - app.models.SimpleRAG - INFO - 找到105个相似度大于阈值(0.01)的文档
+2025-05-18 19:17:03,241 - app.models.SimpleRAG - INFO - 最终返回10个相关文档
+2025-05-18 19:17:03,242 - app.models.SimpleMCPWithRAG - INFO - 检索到10个相关文档
+2025-05-18 19:17:03,242 - app.models.MCPWithContext - INFO - MCP处理问题: '参赛团队可以跨学校组队吗？'
+2025-05-18 19:17:03,242 - app.models.mcp_engine - INFO - 调用模型 qwen-max 生成回答
+2025-05-18 19:17:12,335 - app.models.mcp_engine - INFO - 模型生成回答成功，长度: 445
+2025-05-18 19:17:12,335 - app.models.MCPWithContext - INFO - MCP生成回答完成，字数: 445, 是否有答案: True
+2025-05-18 19:17:12,335 - app.models.SimpleMCPWithRAG - INFO - MCP返回响应类型: <class 'dict'>
+2025-05-18 19:17:12,335 - app.models.SimpleMCPWithRAG - INFO - 从字典提取答案和置信度: 根据提供的资料，对于不同的比赛项目，跨学校组队的规定有所不同..., 1.0
+2025-05-18 19:17:12,335 - app.models.SimpleMCPWithRAG - INFO - 返回成功响应，处理时间: 9.10秒
+2025-05-18 19:17:12,335 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 9.10秒
+2025-05-18 19:17:12,337 - __main__ - INFO - [14/18] 测试: 若竞赛过程中遇到技术问题如何寻求帮助？
+2025-05-18 19:17:12,337 - __main__ - INFO - 测试问题: 若竞赛过程中遇到技术问题如何寻求帮助？
+2025-05-18 19:17:12,337 - app.models.SimpleMCPWithRAG - INFO - SimpleMCPWithRAG接收问题: 若竞赛过程中遇到技术问题如何寻求帮助？
+2025-05-18 19:17:12,338 - app.models.SimpleRAG - INFO - 从查询 '若竞赛过程中遇到技术问题如何寻求帮助？' 中提取关键词: ['竞赛', '过程', '遇到', '技术', '问题', '寻求', '帮助']
+2025-05-18 19:17:12,338 - app.models.SimpleRAG - INFO - 提取的关键词: ['竞赛', '过程', '遇到', '技术', '问题', '寻求', '帮助']
+2025-05-18 19:17:12,344 - app.models.SimpleRAG - INFO - 找到112个相似度大于阈值(0.01)的文档
+2025-05-18 19:17:12,345 - app.models.SimpleRAG - INFO - 最终返回10个相关文档
+2025-05-18 19:17:12,345 - app.models.SimpleMCPWithRAG - INFO - 检索到10个相关文档
+2025-05-18 19:17:12,345 - app.models.MCPWithContext - INFO - MCP处理问题: '若竞赛过程中遇到技术问题如何寻求帮助？'
+2025-05-18 19:17:12,346 - app.models.mcp_engine - INFO - 调用模型 qwen-max 生成回答
+2025-05-18 19:17:18,441 - app.models.mcp_engine - INFO - 模型生成回答成功，长度: 194
+2025-05-18 19:17:18,441 - app.models.MCPWithContext - INFO - MCP生成回答完成，字数: 194, 是否有答案: True
+2025-05-18 19:17:18,442 - app.models.SimpleMCPWithRAG - INFO - MCP返回响应类型: <class 'dict'>
+2025-05-18 19:17:18,442 - app.models.SimpleMCPWithRAG - INFO - 从字典提取答案和置信度: 根据提供的上下文信息，如果在竞赛过程中遇到技术问题，可以与裁..., 1.0
+2025-05-18 19:17:18,442 - app.models.SimpleMCPWithRAG - INFO - 返回成功响应，处理时间: 6.10秒
+2025-05-18 19:17:18,442 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 6.10秒
+2025-05-18 19:17:18,442 - __main__ - INFO - [15/18] 测试: 比赛前是否有相关培训？
+2025-05-18 19:17:18,443 - __main__ - INFO - 测试问题: 比赛前是否有相关培训？
+2025-05-18 19:17:18,443 - app.models.SimpleMCPWithRAG - INFO - SimpleMCPWithRAG接收问题: 比赛前是否有相关培训？
+2025-05-18 19:17:18,443 - app.models.SimpleRAG - INFO - 从查询 '比赛前是否有相关培训？' 中提取关键词: ['比赛', '是否', '相关', '培训']
+2025-05-18 19:17:18,443 - app.models.SimpleRAG - INFO - 提取的关键词: ['比赛', '是否', '相关', '培训']
+2025-05-18 19:17:18,449 - app.models.SimpleRAG - INFO - 找到132个相似度大于阈值(0.01)的文档
+2025-05-18 19:17:18,449 - app.models.SimpleRAG - INFO - 最终返回10个相关文档
+2025-05-18 19:17:18,449 - app.models.SimpleMCPWithRAG - INFO - 检索到10个相关文档
+2025-05-18 19:17:18,449 - app.models.MCPWithContext - INFO - MCP处理问题: '比赛前是否有相关培训？'
+2025-05-18 19:17:18,450 - app.models.mcp_engine - INFO - 调用模型 qwen-max 生成回答
+2025-05-18 19:17:24,486 - app.models.mcp_engine - INFO - 模型生成回答成功，长度: 148
+2025-05-18 19:17:24,486 - app.models.MCPWithContext - INFO - MCP生成回答完成，字数: 148, 是否有答案: True
+2025-05-18 19:17:24,486 - app.models.SimpleMCPWithRAG - INFO - MCP返回响应类型: <class 'dict'>
+2025-05-18 19:17:24,487 - app.models.SimpleMCPWithRAG - INFO - 从字典提取答案和置信度: 根据提供的资料，开源鸿蒙专项赛明确指出不会面向参赛的学生、家..., 1.0
+2025-05-18 19:17:24,487 - app.models.SimpleMCPWithRAG - INFO - 返回成功响应，处理时间: 6.04秒
+2025-05-18 19:17:24,487 - __main__ - INFO - 问题处理完成，置信度: 1.00, 耗时: 6.04秒
+2025-05-18 19:17:24,488 - __main__ - INFO - [16/18] 测试: 这是一个测试问题
+2025-05-18 19:17:24,488 - __main__ - INFO - 测试问题: 这是一个测试问题
+2025-05-18 19:17:24,488 - app.models.SimpleMCPWithRAG - INFO - SimpleMCPWithRAG接收问题: 这是一个测试问题
+2025-05-18 19:17:24,489 - app.models.SimpleRAG - INFO - 从查询 '这是一个测试问题' 中提取关键词: ['测试', '问题']
+2025-05-18 19:17:24,489 - app.models.SimpleRAG - INFO - 提取的关键词: ['测试', '问题']
+2025-05-18 19:17:24,490 - app.models.SimpleRAG - INFO - 找到23个相似度大于阈值(0.01)的文档
+2025-05-18 19:17:24,491 - app.models.SimpleRAG - INFO - 最终返回10个相关文档
+2025-05-18 19:17:24,491 - app.models.SimpleMCPWithRAG - INFO - 检索到10个相关文档
+2025-05-18 19:17:24,491 - app.models.MCPWithContext - INFO - MCP处理问题: '这是一个测试问题'
+2025-05-18 19:17:24,491 - app.models.mcp_engine - INFO - 调用模型 qwen-max 生成回答
+2025-05-18 19:17:26,399 - app.models.mcp_engine - INFO - 模型生成回答成功，长度: 21
+2025-05-18 19:17:26,399 - app.models.MCPWithContext - INFO - MCP生成回答完成，字数: 21, 是否有答案: False
+2025-05-18 19:17:26,399 - app.models.SimpleMCPWithRAG - INFO - MCP返回响应类型: <class 'dict'>
+2025-05-18 19:17:26,399 - app.models.SimpleMCPWithRAG - INFO - 从字典提取答案和置信度: 抱歉，我在资料中找不到与您问题相关的信息。..., 0.1
+2025-05-18 19:17:26,400 - app.models.SimpleMCPWithRAG - INFO - 返回成功响应，处理时间: 1.91秒
+2025-05-18 19:17:26,400 - __main__ - INFO - 问题处理完成，置信度: 0.10, 耗时: 1.91秒
+2025-05-18 19:17:26,400 - __main__ - INFO - [17/18] 测试: 请你谈谈你对人工智能的看法
+2025-05-18 19:17:26,400 - __main__ - INFO - 测试问题: 请你谈谈你对人工智能的看法
+2025-05-18 19:17:26,401 - app.models.SimpleMCPWithRAG - INFO - SimpleMCPWithRAG接收问题: 请你谈谈你对人工智能的看法
+2025-05-18 19:17:26,402 - app.models.SimpleRAG - INFO - 从查询 '请你谈谈你对人工智能的看法' 中提取关键词: ['谈谈', '人工智能', '看法']
+2025-05-18 19:17:26,402 - app.models.SimpleRAG - INFO - 提取的关键词: ['谈谈', '人工智能', '看法']
+2025-05-18 19:17:26,406 - app.models.SimpleRAG - INFO - 找到65个相似度大于阈值(0.01)的文档
+2025-05-18 19:17:26,406 - app.models.SimpleRAG - INFO - 最终返回10个相关文档
+2025-05-18 19:17:26,407 - app.models.SimpleMCPWithRAG - INFO - 检索到10个相关文档
+2025-05-18 19:17:26,407 - app.models.MCPWithContext - INFO - MCP处理问题: '请你谈谈你对人工智能的看法'
+2025-05-18 19:17:26,407 - app.models.mcp_engine - INFO - 调用模型 qwen-max 生成回答
+2025-05-18 19:17:29,181 - app.models.mcp_engine - INFO - 模型生成回答成功，长度: 60
+2025-05-18 19:17:29,181 - app.models.MCPWithContext - INFO - MCP生成回答完成，字数: 60, 是否有答案: False
+2025-05-18 19:17:29,181 - app.models.SimpleMCPWithRAG - INFO - MCP返回响应类型: <class 'dict'>
+2025-05-18 19:17:29,182 - app.models.SimpleMCPWithRAG - INFO - 从字典提取答案和置信度: 抱歉，我在资料中找不到与您问题相关的信息。这些文档主要介绍了..., 0.1
+2025-05-18 19:17:29,182 - app.models.SimpleMCPWithRAG - INFO - 返回成功响应，处理时间: 2.78秒
+2025-05-18 19:17:29,182 - __main__ - INFO - 问题处理完成，置信度: 0.10, 耗时: 2.78秒
+2025-05-18 19:17:29,183 - __main__ - INFO - [18/18] 测试: 世界上最高的山峰是什么？
+2025-05-18 19:17:29,183 - __main__ - INFO - 测试问题: 世界上最高的山峰是什么？
+2025-05-18 19:17:29,183 - app.models.SimpleMCPWithRAG - INFO - SimpleMCPWithRAG接收问题: 世界上最高的山峰是什么？
+2025-05-18 19:17:29,184 - app.models.SimpleRAG - INFO - 从查询 '世界上最高的山峰是什么？' 中提取关键词: ['世界', '最高', '山峰']
+2025-05-18 19:17:29,184 - app.models.SimpleRAG - INFO - 提取的关键词: ['世界', '最高', '山峰']
+2025-05-18 19:17:29,185 - app.models.SimpleRAG - INFO - 找到13个相似度大于阈值(0.01)的文档
+2025-05-18 19:17:29,185 - app.models.SimpleRAG - INFO - 最终返回10个相关文档
+2025-05-18 19:17:29,185 - app.models.SimpleMCPWithRAG - INFO - 检索到10个相关文档
+2025-05-18 19:17:29,185 - app.models.MCPWithContext - INFO - MCP处理问题: '世界上最高的山峰是什么？'
+2025-05-18 19:17:29,186 - app.models.mcp_engine - INFO - 调用模型 qwen-max 生成回答
+2025-05-18 19:17:30,848 - app.models.mcp_engine - INFO - 模型生成回答成功，长度: 21
+2025-05-18 19:17:30,848 - app.models.MCPWithContext - INFO - MCP生成回答完成，字数: 21, 是否有答案: False
+2025-05-18 19:17:30,849 - app.models.SimpleMCPWithRAG - INFO - MCP返回响应类型: <class 'dict'>
+2025-05-18 19:17:30,849 - app.models.SimpleMCPWithRAG - INFO - 从字典提取答案和置信度: 抱歉，我在资料中找不到与您问题相关的信息。..., 0.1
+2025-05-18 19:17:30,849 - app.models.SimpleMCPWithRAG - INFO - 返回成功响应，处理时间: 1.67秒
+2025-05-18 19:17:30,849 - __main__ - INFO - 问题处理完成，置信度: 0.10, 耗时: 1.67秒
+2025-05-18 19:17:30,853 - __main__ - INFO - 测试结果已保存至: test_results/test_results_20250518_191730.json
+2025-05-18 19:17:30,853 - __main__ - INFO - 
+====== 测试分析报告 ======
+2025-05-18 19:17:30,853 - __main__ - INFO - 测试问题总数: 18
+2025-05-18 19:17:30,853 - __main__ - INFO - 成功处理数: 18
+2025-05-18 19:17:30,853 - __main__ - INFO - 成功率: 100.0%
+2025-05-18 19:17:30,855 - __main__ - INFO - 平均置信度: 0.85
+2025-05-18 19:17:30,855 - __main__ - INFO - 平均处理时间: 6.82秒
+2025-05-18 19:17:30,855 - __main__ - INFO - 
+置信度分布:
+2025-05-18 19:17:30,855 - __main__ - INFO -   高 (>0.7): 15 个问题 (83.3%)
+2025-05-18 19:17:30,856 - __main__ - INFO -   中 (0.4-0.7): 0 个问题 (0.0%)
+2025-05-18 19:17:30,856 - __main__ - INFO -   低 (0.2-0.4): 0 个问题 (0.0%)
+2025-05-18 19:17:30,856 - __main__ - INFO -   极低 (<0.2): 3 个问题 (16.7%)
+2025-05-18 19:17:30,856 - __main__ - INFO - 
+测试完成！

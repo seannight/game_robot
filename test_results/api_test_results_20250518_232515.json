@@ -1,0 +1,32 @@
+[
+  {
+    "question": "泰迪杯报名时间是什么时候？",
+    "answer": "",
+    "confidence": 0.8,
+    "sources_count": 0,
+    "competition_type": null,
+    "processing_time": 0.28009915351867676,
+    "success": true,
+    "status_code": 200
+  },
+  {
+    "question": "3D编程模型创新设计专项赛有什么要求？",
+    "answer": "本系统支持16个专项赛事的咨询服务，包括人工智能创新挑战赛、3D编程模型创新设计专项赛等。每个赛事都有其特定的参赛要求、评分标准和奖项设置。",
+    "confidence": 0.8,
+    "sources_count": 0,
+    "competition_type": null,
+    "processing_time": 0.004014730453491211,
+    "success": true,
+    "status_code": 200
+  },
+  {
+    "question": "智能芯片与计算思维专项赛评分标准是什么？",
+    "answer": "",
+    "confidence": 0.8,
+    "sources_count": 0,
+    "competition_type": null,
+    "processing_time": 0.0030069351196289062,
+    "success": true,
+    "status_code": 200
+  }
+]

@@ -1,0 +1,44 @@
+2025-05-18 23:23:02,813 - __main__ - INFO - 开始WebSocket测试...
+2025-05-18 23:23:02,814 - __main__ - INFO - 连接到WebSocket: ws://localhost:53085/ws
+2025-05-18 23:23:05,006 - __main__ - ERROR - 测试过程中发生错误: server rejected WebSocket connection: HTTP 404
+2025-05-18 23:23:05,023 - __main__ - ERROR - Traceback (most recent call last):
+  File "D:\teddy-cup\test_websocket.py", line 200, in main
+    results = await run_tests()
+              ^^^^^^^^^^^^^^^^^
+  File "D:\teddy-cup\test_websocket.py", line 111, in run_tests
+    async with websockets.connect(uri) as websocket:
+  File "D:\teddy-cup\.venv\Lib\site-packages\websockets\asyncio\client.py", line 587, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "D:\teddy-cup\.venv\Lib\site-packages\websockets\asyncio\client.py", line 543, in __await_impl__
+    await self.connection.handshake(
+  File "D:\teddy-cup\.venv\Lib\site-packages\websockets\asyncio\client.py", line 114, in handshake
+    raise self.protocol.handshake_exc
+  File "D:\teddy-cup\.venv\Lib\site-packages\websockets\client.py", line 325, in parse
+    self.process_response(response)
+  File "D:\teddy-cup\.venv\Lib\site-packages\websockets\client.py", line 142, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+
+2025-05-19 20:14:22,489 - __main__ - INFO - 开始WebSocket测试...
+2025-05-19 20:14:22,501 - __main__ - INFO - 连接到WebSocket: ws://localhost:53085/ws
+2025-05-19 20:14:24,687 - __main__ - ERROR - 测试过程中发生错误: server rejected WebSocket connection: HTTP 404
+2025-05-19 20:14:24,693 - __main__ - ERROR - Traceback (most recent call last):
+  File "d:\teddy-cup\test_websocket.py", line 200, in main
+    results = await run_tests()
+              ^^^^^^^^^^^^^^^^^
+  File "d:\teddy-cup\test_websocket.py", line 111, in run_tests
+    async with websockets.connect(uri) as websocket:
+  File "D:\teddy-cup\.venv\Lib\site-packages\websockets\asyncio\client.py", line 587, in __aenter__
+    return await self
+           ^^^^^^^^^^
+  File "D:\teddy-cup\.venv\Lib\site-packages\websockets\asyncio\client.py", line 543, in __await_impl__
+    await self.connection.handshake(
+  File "D:\teddy-cup\.venv\Lib\site-packages\websockets\asyncio\client.py", line 114, in handshake
+    raise self.protocol.handshake_exc
+  File "D:\teddy-cup\.venv\Lib\site-packages\websockets\client.py", line 325, in parse
+    self.process_response(response)
+  File "D:\teddy-cup\.venv\Lib\site-packages\websockets\client.py", line 142, in process_response
+    raise InvalidStatus(response)
+websockets.exceptions.InvalidStatus: server rejected WebSocket connection: HTTP 404
+
